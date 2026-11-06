@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =================================================================== -->
+  <!-- META & SEO — GOKUL T VIBIN                                          -->
+  <!-- =================================================================== -->
+  <title>Gokul T Vibin — Digital Marketing Executive · Kochi</title>
+  <meta name="description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and conversion funnels in Kochi, Kerala.">
+  <meta name="author" content="Gokul T Vibin">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gokultvibin.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gokul T Vibin — Digital Marketing Executive · Kochi">
+  <meta property="og:description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and conversion funnels.">
+  <meta property="og:url" content="https://gokultvibin.com/">
+  <meta property="og:image" content="https://gokultvibin.com/assets/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gokul T Vibin — Digital Marketing Executive · Kochi">
+  <meta name="twitter:description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and conversion funnels.">
+  <meta name="twitter:image" content="https://gokultvibin.com/assets/og-image.svg">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gokul T Vibin",
+    "jobTitle": "Digital Marketing Executive",
+    "email": "mailto:gokultvibin.work@gmail.com",
+    "telephone": "+919048646762",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kochi",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/gokultvibin"
+    ],
+    "knowsAbout": [
+      "Meta Ads",
+      "Google Ads",
+      "Technical SEO",
+      "Lead Generation",
+      "Consumer Psychology",
+      "Conversion Rate Optimization"
+    ]
+  }
+  </script>
+
+  <!-- Inline Monogram Favicon (Amber on Slate) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%230C111C'/><rect x='2' y='2' width='60' height='60' rx='8' fill='none' stroke='%23F59E0B' stroke-width='2'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='24' font-weight='700' fill='%23F59E0B'>GV</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk (300-700), Instrument Serif (italic), JetBrains Mono, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Tokens Configuration: Amber on Slate -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'bg-base': '#0C111C',
+            'bg-surface': '#1D2534',
+            'bg-elevated': '#2F3A4D',
+            ink: '#F5F1E8',
+            'ink-dim': '#A8AEB8',
+            'ink-mute': '#6B7280',
+            'ink-inverse': '#0C111C',
+            amber: '#F59E0B',
+            'amber-hi': '#FBBF24',
+            'amber-lo': '#B45309',
+            rose: '#FB7185',
+            rule: 'rgba(245, 241, 232, 0.08)'
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- =================================================================== -->
+  <!-- CSS: SYSTEM STYLES & BUG-FREE TECHNIQUES                            -->
+  <!-- =================================================================== -->
+  <style>
+    /* Section Off-screen Skip */
+    section {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 700px;
+    }
+
+    /* 04. CSS Counters for Editorial Auto-Numbering */
+    body { counter-reset: sec 0; }
+    .chapter-section { counter-increment: sec; }
+    .chapter-num::before {
+      content: counter(sec, decimal-leading-zero) " / 06";
+    }
+
+    /* 08. Text-wrap discipline: balance on headings, pretty on short deks */
+    h1, h2, h3 { text-wrap: balance; }
+    .dek, .card-title { text-wrap: pretty; }
+
+    /* Stable, Zero-Shift Typography */
+    .vf-headline {
+      font-variation-settings: 'wght' 500;
+    }
+    .vf-link {
+      font-variation-settings: 'wght' 450;
+      transition: color 150ms ease;
+    }
+
+    /* 03. animation-timeline: view() for entrance reveals */
+    @supports (animation-timeline: view()) {
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        animation: scrollEnter 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation-timeline: view();
+        animation-range: entry 10% cover 26%;
+      }
+      @keyframes scrollEnter {
+        to { opacity: 1; transform: translateY(0); }
+      }
+    }
+    @supports not (animation-timeline: view()) {
+      .scroll-reveal { opacity: 1; transform: none; }
+    }
+
+    /* Sibling Dimming with Smooth Hover Undim */
+    .reveal-group:has(.reveal-card[aria-expanded="true"]) .reveal-card:not(.is-open) {
+      opacity: 0.55;
+      filter: saturate(0.7);
+      transition: opacity 200ms ease, filter 200ms ease, border-color 200ms ease;
+    }
+    .reveal-group:has(.reveal-card[aria-expanded="true"]) .reveal-card:not(.is-open):hover {
+      opacity: 0.92;
+      filter: saturate(1);
+    }
+
+    /* 04. Bug Fix: Collapsed Panel contain: layout style (no content-visibility thrashing) */
+    .card-detail-panel {
+      contain: layout style;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 260ms ease-out, opacity 260ms ease-out;
+    }
+    .reveal-card.is-open .card-detail-panel,
+    .reveal-card[aria-expanded="true"] .card-detail-panel {
+      max-height: 480px;
+      opacity: 1;
+    }
+
+    /* Plus to Multiply Icon (Pure CSS) */
+    .card-plus-icon .bar-1,
+    .card-plus-icon .bar-2 {
+      transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-card.is-open .card-plus-icon .bar-1,
+    .reveal-card[aria-expanded="true"] .card-plus-icon .bar-1 {
+      transform: rotate(45deg);
+    }
+    .reveal-card.is-open .card-plus-icon .bar-2,
+    .reveal-card[aria-expanded="true"] .card-plus-icon .bar-2 {
+      transform: rotate(45deg);
+    }
+
+    /* 06. clip-path: circle() on Education Cards */
+    .edu-card .edu-reveal-layer {
+      clip-path: circle(0% at 50% 50%);
+      transition: clip-path 400ms cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none !important;
+    }
+    .edu-card:hover .edu-reveal-layer,
+    .edu-card:focus-within .edu-reveal-layer {
+      clip-path: circle(88% at 50% 50%);
+    }
+
+    /* 08. Container Queries */
+    .reveal-card {
+      container-type: inline-size;
+      transition: border-color 200ms, background-color 200ms;
+    }
+    @container (max-width: 440px) {
+      .card-header-inner { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+    }
+
+    /* 03. Bug Fix: Floating Labels requiring placeholder=" " */
+    .field {
+      position: relative;
+    }
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: transparent;
+    }
+    .field label {
+      position: absolute;
+      left: 1rem;
+      top: 0.95rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: #A8AEB8;
+      pointer-events: none;
+      transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms ease;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transform-origin: left top;
+    }
+    .field:has(input:not(:placeholder-shown)) label,
+    .field:has(input:focus) label,
+    .field:has(textarea:not(:placeholder-shown)) label,
+    .field:has(textarea:focus) label {
+      transform: translateY(-0.7rem) scale(0.8);
+      color: #F59E0B;
+    }
+
+    /* 07. Bug Fix: @starting-style with transition-behavior: allow-discrete */
+    .mobile-menu {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 220ms ease, transform 220ms ease, display 220ms ease allow-discrete;
+    }
+    .mobile-menu[hidden] {
+      display: none;
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+    @starting-style {
+      .mobile-menu:not([hidden]) {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+    }
+
+    #back-to-top {
+      transition: opacity 220ms ease, transform 220ms ease, display 220ms ease allow-discrete;
+    }
+    #back-to-top[hidden] {
+      display: none;
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    @starting-style {
+      #back-to-top:not([hidden]) {
+        opacity: 0;
+        transform: scale(0.85);
+      }
+    }
+
+    /* Native Cursor Precision (Cursor Dot Disabled to prevent hover interception & jitter) */
+    #cursor-dot {
+      display: none !important;
+    }
+
+    /* Editorial Corner Crop Marks */
+    .crop-mark {
+      position: relative;
+    }
+    .crop-mark::before, .crop-mark::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-color: rgba(245, 241, 232, 0.16);
+      pointer-events: none;
+    }
+    .crop-mark::before {
+      top: -4px; left: -4px;
+      border-top: 1px solid; border-left: 1px solid;
+    }
+    .crop-mark::after {
+      top: -4px; right: -4px;
+      border-top: 1px solid; border-right: 1px solid;
+    }
+
+    /* Rotating Conic Border on Primary CTA */
+    .conic-btn {
+      position: relative;
+      isolation: isolate;
+    }
+    .conic-btn::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      background: conic-gradient(from 0deg, #F59E0B, #FB7185, #F59E0B);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      animation: spinConic 4s linear infinite;
+      pointer-events: none !important;
+    }
+    .conic-btn:hover::before {
+      opacity: 1;
+    }
+    @keyframes spinConic {
+      to { transform: rotate(360deg); }
+    }
+
+    /* 10. Bug Fix: Pulse Dot using --amber-hi (#FBBF24), 1.8s ease-in-out */
+    @keyframes pulseAmberHi {
+      0%, 100% { opacity: 0.35; transform: scale(0.92); }
+      50% { opacity: 1; transform: scale(1.12); }
+    }
+    .pulse-amber {
+      animation: pulseAmberHi 1.8s ease-in-out infinite;
+    }
+
+    /* Psychology Micro-Tooltip (<dfn>) */
+    .psych-term {
+      font-style: normal;
+      position: relative;
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: #F59E0B;
+      cursor: pointer;
+    }
+    .psych-tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%) translateY(4px);
+      transition: opacity 0.2s, transform 0.2s;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 30;
+    }
+    .psych-term:hover .psych-tooltip,
+    .psych-term:focus-within .psych-tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Infinite Marquee */
+    @keyframes marqueeScroll {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      animation: marqueeScroll 50s linear infinite;
+      will-change: transform;
+    }
+
+    /* Hero Subline (Stable & Visible) */
+    .h1-wipe-subline {
+      opacity: 0.9;
+      transition: opacity 200ms ease;
+    }
+    .hero-h1-wrap:hover .h1-wipe-subline {
+      opacity: 1;
+    }
+
+    /* Focus Ring (WCAG AAA) */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, [tabindex="0"]:focus-visible {
+      outline: 2px solid #F59E0B !important;
+      outline-offset: 2px !important;
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+      .animate-marquee { animation: none !important; }
+      #cursor-dot { display: none !important; }
+      .pulse-amber { animation: none !important; opacity: 1 !important; }
+      .scroll-reveal { opacity: 1 !important; transform: none !important; }
+      .h1-wipe-subline { clip-path: inset(0 0 0 0) !important; }
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body { background-color: #ffffff !important; color: #0c111c !important; }
+      header, #cursor-dot, svg.fixed, #back-to-top, #toast, .animate-marquee, .mobile-menu { display: none !important; }
+      .card-detail-panel { max-height: none !important; opacity: 1 !important; display: block !important; }
+      .edu-reveal-layer { clip-path: none !important; position: static !important; display: block !important; border: 1px solid #d1d5db !important; background: #f9fafb !important; color: #0c111c !important; margin-top: 0.5rem !important; }
+      .reveal-card, .edu-card { border: 1px solid #e5e7eb !important; background: #ffffff !important; color: #0c111c !important; break-inside: avoid; }
+      .chapter-section { border-bottom: 1px solid #e5e7eb !important; break-inside: avoid; }
+      h1, h2, h3, h4, span, p { color: #0c111c !important; }
+      .text-amber, .text-rose { color: #b45309 !important; font-weight: 600 !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-bg-base text-ink font-sans antialiased selection:bg-amber selection:text-ink-inverse relative overflow-x-hidden min-h-screen">
+
+  <!-- 12. Blend-Difference Cursor Dot -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- 01. SVG feTurbulence Grain Overlay (Full Viewport, Non-Interfering) -->
+  <svg class="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-[0.035] mix-blend-overlay select-none" style="pointer-events: none !important;" aria-hidden="true">
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain)"/>
+  </svg>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 z-[100] px-4 py-2 bg-amber text-ink-inverse font-mono font-bold text-xs rounded shadow-lg">
+    Skip to main content
+  </a>
+
+  <!-- =================================================================== -->
+  <!-- NAVIGATION (Semantic <a> elements, sticky backdrop blur)          -->
+  <!-- =================================================================== -->
+  <header class="sticky top-0 left-0 right-0 z-40 h-[60px] border-b border-rule bg-bg-base/85 backdrop-blur-[12px] flex items-center">
+    <div class="max-w-6xl mx-auto px-6 w-full flex items-center justify-between">
+      
+      <!-- Brand Link: GOKUL · T · VIBIN -->
+      <a href="#hero" class="flex items-center gap-1 font-mono text-xs uppercase tracking-[0.18em] text-ink hover:text-amber transition-colors focus:outline-none">
+        <span>GOKUL</span>
+        <span class="text-amber font-bold">&middot;</span>
+        <span>T</span>
+        <span class="text-amber font-bold">&middot;</span>
+        <span>VIBIN</span>
+      </a>
+
+      <!-- Desktop Nav Links (Semantic <a>) -->
+      <nav class="hidden md:flex items-center gap-7 font-mono text-xs uppercase tracking-[0.14em]" aria-label="Primary Navigation">
+        <a href="#about" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
+          <span>About</span>
+          <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
+        </a>
+        <a href="#work" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
+          <span>Work</span>
+          <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
+        </a>
+        <a href="#skills" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
+          <span>Skills</span>
+          <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
+        </a>
+        <a href="#education" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
+          <span>Education</span>
+          <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
+        </a>
+        <a href="#contact" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
+          <span>Contact</span>
+          <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
+        </a>
+      </nav>
+
+      <!-- Right Action: Semantic <a> Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="font-mono text-xs text-ink-dim hover:text-amber tracking-[0.12em] uppercase transition-colors px-2 py-1">
+          CV &darr;
+        </a>
+        <a href="#contact" class="px-3.5 py-1.5 rounded-full bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.12em] hover:bg-amber-hi transition-all">
+          Get in Touch
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" type="button" class="md:hidden p-2 text-ink-dim hover:text-ink focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="1.8">
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="17" x2="21" y2="17"></line>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- 07. Mobile Menu (Uses hidden + @starting-style with allow-discrete) -->
+    <div id="mobile-menu" hidden class="mobile-menu fixed inset-0 top-[60px] bg-bg-base z-30 flex flex-col justify-between p-8 border-b border-rule">
+      <nav class="flex flex-col space-y-5 font-mono text-base uppercase tracking-[0.15em] pt-4">
+        <a href="#about" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
+          <span>02 &bull; About</span>
+          <span class="text-ink-dim">&rarr;</span>
+        </a>
+        <a href="#work" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
+          <span>03 &bull; Work Trajectory</span>
+          <span class="text-ink-dim">&rarr;</span>
+        </a>
+        <a href="#skills" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
+          <span>04 &bull; Competencies</span>
+          <span class="text-ink-dim">&rarr;</span>
+        </a>
+        <a href="#education" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
+          <span>05 &bull; Education</span>
+          <span class="text-ink-dim">&rarr;</span>
+        </a>
+        <a href="#contact" class="menu-link py-2 border-b border-rule text-amber flex justify-between">
+          <span>06 &bull; Direct Contact</span>
+          <span>&rarr;</span>
+        </a>
+      </nav>
+      <div class="pt-6 font-mono text-xs text-ink-dim flex flex-col gap-3">
+        <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="py-3 px-4 rounded bg-bg-surface border border-rule text-center text-ink font-bold">
+          Download Resume (PDF)
+        </a>
+        <span class="text-center text-[11px]">Kochi, Kerala &bull; gokultvibin.work@gmail.com</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================== -->
+  <!-- MAIN CONTENT                                                        -->
+  <!-- =================================================================== -->
+  <main id="main-content" class="relative z-10">
+
+    <!-- ================================================================= -->
+    <!-- 01. HERO CHAPTER                                                  -->
+    <!-- ================================================================= -->
+    <section id="hero" class="chapter-section min-h-[92svh] flex flex-col justify-between pt-12 pb-8 border-b border-rule relative overflow-hidden">
+      
+      <!-- 01. Bug Fix: Warm Amber Radial Ambient Glow -->
+      <div class="absolute right-0 top-1/4 w-[520px] h-[520px] bg-[radial-gradient(ellipse_at_70%_40%,rgba(245,158,11,0.10),transparent_60%)] blur-[80px] pointer-events-none -z-10" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto px-6 w-full flex-1 flex flex-col justify-center py-8">
+        
+        <!-- Eyebrow: Auto-counter + Role -->
+        <div class="flex items-center gap-3 mb-6 font-mono text-xs uppercase tracking-[0.16em] text-ink-dim">
+          <span class="text-amber font-bold">01 / HELLO</span>
+          <span class="w-3 h-px bg-rule" aria-hidden="true"></span>
+          <span>Digital Marketing Executive &middot; Kochi, IN</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Headline Column -->
+          <div class="lg:col-span-7">
+            <div class="hero-h1-wrap cursor-pointer select-none group" tabindex="0" role="region" aria-label="Hero statement">
+              <h1 class="vf-headline font-display font-medium text-4xl sm:text-6xl lg:text-[4.75rem] leading-[0.96] tracking-[-0.035em] text-ink mb-4">
+                Data into <br>
+                <span class="text-amber font-serif italic font-normal tracking-normal">brand growth.</span>
+              </h1>
+              
+              <p class="h1-wipe-subline dek font-serif italic text-lg sm:text-2xl text-ink-dim leading-snug max-w-[42ch]">
+                Psychology-led performance marketing across Meta Ads, Google Ads, and conversion funnels.
+              </p>
+            </div>
+
+            <!-- CTA Row: Semantic <a> links -->
+            <div class="flex flex-wrap items-center gap-5 mt-8">
+              <a href="#work" class="conic-cta conic-btn inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.14em] hover:bg-amber-hi transition-all">
+                <span>Explore My Work</span>
+                <span class="font-sans font-bold">&rarr;</span>
+              </a>
+
+              <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-ink hover:text-amber underline decoration-rule hover:decoration-amber underline-offset-4 transition-colors py-2">
+                <span>Resume &darr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual: 3 Layered Ad Artifacts with Parallax -->
+          <div class="lg:col-span-5 relative flex items-center justify-center pt-4 lg:pt-0">
+            <div class="relative w-full max-w-[340px] sm:max-w-[380px] h-[370px] flex items-center justify-center">
+
+              <!-- Artifact 1: Back Story Frame 9:16 -->
+              <div data-parallax="0.08" class="hidden sm:block absolute left-2 top-0 w-36 aspect-[9/16] rounded-xl border border-rule bg-bg-elevated p-2.5 -rotate-7 opacity-40 z-0 select-none">
+                <div class="flex justify-between items-center text-[7px] font-mono text-ink-dim mb-1">
+                  <span>STORY 9:16</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber"></span>
+                </div>
+                <div class="w-full h-24 rounded bg-bg-surface border border-rule mb-2"></div>
+                <p class="font-display font-medium text-[9px] text-ink leading-tight mb-2">Study Abroad 2026</p>
+                <div class="w-full py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-[7px] text-center uppercase">Apply</div>
+                <span class="block font-mono text-[6px] text-ink-dim uppercase text-center mt-1">ILLUSTRATIVE — SAMPLE DATA</span>
+              </div>
+
+              <!-- Artifact 2: Middle Feed Ad Card 4:5 -->
+              <div data-parallax="0.04" class="relative w-full sm:w-64 rounded-xl border border-rule bg-bg-surface p-4 -rotate-1 z-10 select-none shadow-2xl">
+                <div class="flex items-center justify-between text-[8px] font-mono text-ink-dim uppercase mb-2">
+                  <span>SPONSORED</span>
+                  <span class="text-rose font-bold">FEED 4:5</span>
+                </div>
+                <p class="card-title text-xs text-ink font-sans leading-snug mb-3">
+                  Your IELTS score is the only thing between you and your Master's degree.
+                </p>
+                <div class="w-full aspect-square rounded-lg border border-rule bg-bg-base flex flex-col items-center justify-center p-3 text-center mb-3">
+                  <span class="font-mono text-[9px] text-amber font-bold uppercase tracking-wider">INTAKE 2026</span>
+                  <span class="font-mono text-[8px] text-ink-dim">DIRECT ADMISSIONS</span>
+                </div>
+                <div class="w-full py-2 px-3 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-[10px] text-center uppercase tracking-wider block">
+                  Book Free Counselling
+                </div>
+                <span class="block font-mono text-[7px] text-ink-dim uppercase text-center mt-2 tracking-tight">ILLUSTRATIVE — SAMPLE DATA</span>
+              </div>
+
+              <!-- Artifact 3: Front Metrics Strip (05. JS Animated Numbers) -->
+              <div data-parallax="0.02" class="hidden sm:block absolute -bottom-2 right-0 w-52 rounded-xl border border-rule bg-bg-elevated p-3 z-20 select-none shadow-2xl">
+                <span class="block font-mono text-[7px] text-ink-dim uppercase tracking-wider pb-1 border-b border-rule mb-1.5">
+                  ILLUSTRATIVE — SAMPLE DATA
+                </span>
+                <div class="space-y-1 font-mono text-[11px]">
+                  <div class="flex justify-between">
+                    <span class="text-ink-dim">CTR</span>
+                    <span class="text-rose font-bold">&blacktriangleright; +<span class="counter" data-target="2" data-suffix=".4x">0</span></span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-ink-dim">CPL</span>
+                    <span class="text-rose font-bold">&blacktriangleright; &minus;<span class="counter" data-target="38" data-suffix="%">0</span></span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-ink-dim">ROAS</span>
+                    <span class="text-amber font-bold">&blacktriangleright; <span class="counter" data-target="4" data-suffix=".1x">0</span></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Marquee Strip Below Hero -->
+      <div class="w-full border-t border-b border-rule py-3 overflow-hidden whitespace-nowrap bg-bg-base" aria-hidden="true">
+        <div class="animate-marquee font-mono text-xs uppercase tracking-[0.24em] text-ink-dim">
+          <span class="mx-6">LEAD GEN &middot;</span>
+          <span class="mx-6 text-amber">META ADS &middot;</span>
+          <span class="mx-6">SEO ARCHITECTURE &middot;</span>
+          <span class="mx-6 text-rose">GOOGLE ADS &middot;</span>
+          <span class="mx-6">BRAND STRATEGY &middot;</span>
+          <span class="mx-6">CONTENT FUNNELS &middot;</span>
+          <span class="mx-6">CONSUMER HEURISTICS &middot;</span>
+          <span class="mx-6">LEAD GEN &middot;</span>
+          <span class="mx-6 text-amber">META ADS &middot;</span>
+          <span class="mx-6">SEO ARCHITECTURE &middot;</span>
+          <span class="mx-6 text-rose">GOOGLE ADS &middot;</span>
+          <span class="mx-6">BRAND STRATEGY &middot;</span>
+          <span class="mx-6">CONTENT FUNNELS &middot;</span>
+          <span class="mx-6">CONSUMER HEURISTICS &middot;</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 02. ABOUT CHAPTER                                                 -->
+    <!-- ================================================================= -->
+    <section id="about" class="chapter-section py-20 border-b border-rule relative">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="crop-mark pb-6 mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+            <div class="lg:col-span-6">
+              <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
+              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
+                The marketer who decodes the mind behind the click.
+              </h2>
+            </div>
+            <div class="lg:col-span-6 lg:text-right">
+              <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
+                CHAPTER 02 &mdash; OPERATIONAL DOCTRINE
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 h-px bg-rule mt-6" aria-hidden="true"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-4 sticky top-24">
+            <span class="font-mono text-xs text-amber uppercase tracking-[0.16em] block mb-2 font-bold">
+              // Core Thesis
+            </span>
+            <p class="font-serif italic text-xl text-ink leading-snug">
+              &ldquo;Campaigns don't fail from bid strategies; they fail from misunderstanding human motivation.&rdquo;
+            </p>
+          </div>
+
+          <div class="lg:col-span-8 space-y-6 text-sm sm:text-base text-ink-dim font-sans leading-[1.75]">
+            <p>
+              Holding a Bachelor's Degree in <dfn class="psych-term" tabindex="0">psychology<span class="psych-tooltip px-2.5 py-1 rounded bg-bg-elevated border border-amber font-mono text-[10px] text-amber shadow-xl">consumer behaviour &bull; perception &bull; memory</span></dfn> from MES Asmabi College, I treat advertising funnels as cognitive choice environments. When prospective clients hesitate, it is rarely due to pricing alone — it is loss aversion, cognitive friction, or unanchored trust.
+            </p>
+            <p>
+              Combined with a CCNA in Network Engineering and an Advanced Diploma in Digital Marketing, my campaigns fuse technical server-level diagnostics with high-converting creative execution across Meta Ads and Google search intent.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 03. WORK CHAPTER                                                  -->
+    <!-- ================================================================= -->
+    <section id="work" class="chapter-section py-20 border-b border-rule relative">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="crop-mark pb-6 mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+            <div class="lg:col-span-6">
+              <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
+              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
+                Verified agency trajectory &amp; client campaigns.
+              </h2>
+            </div>
+            <div class="lg:col-span-6 lg:text-right">
+              <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
+                CHAPTER 03 &mdash; TRACK RECORD
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 h-px bg-rule mt-6" aria-hidden="true"></div>
+        </div>
+
+        <!-- 3 Roles in Accordion Group with Left Index Rail -->
+        <div class="reveal-group space-y-4 max-w-4xl mx-auto">
+          
+          <!-- Role 01: Echowave Advertising (Current) -->
+          <div class="grid grid-cols-12 gap-4 items-start">
+            <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
+              01
+            </div>
+            <div class="col-span-10 sm:col-span-11">
+              <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-1">
+                <div class="card-header-inner flex items-center justify-between gap-4">
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <!-- 01/10. Bug Fix: --rose dot only for CURRENT status pill, pulse uses --amber-hi -->
+                      <span class="w-2 h-2 rounded-full bg-rose pulse-amber shrink-0" aria-hidden="true"></span>
+                      <span class="font-mono text-[10px] text-rose uppercase tracking-wider font-bold">CURRENT</span>
+                      <span class="font-mono text-xs text-ink-dim">Jul 2025 &ndash; Aug 2026</span>
+                    </div>
+                    <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
+                      Echowave Advertising &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Executive</span>
+                    </h3>
+                  </div>
+                  <!-- Pure CSS + to X Icon -->
+                  <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
+                    <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                    <span class="bar-2 absolute h-full w-px bg-amber"></span>
+                  </div>
+                </div>
+
+                <div id="work-detail-1" class="card-detail-panel" role="region">
+                  <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
+                    <p class="font-mono text-xs text-ink">Kodungallur, Kerala</p>
+                    <ul class="space-y-1.5 list-disc list-inside">
+                      <li>Managed multi-platform social media accounts, content strategies, and monthly calendars.</li>
+                      <li>Executed and optimised high-ROAS Meta Ads campaigns for lead generation and brand awareness.</li>
+                      <li>Conducted technical SEO: keyword research, on-page optimisation, and structured metadata.</li>
+                      <li>Developed Google Ads competence: campaign structure, bidding strategies, and performance diagnostics.</li>
+                      <li>Coordinated marketing creative design pipelines and content production.</li>
+                    </ul>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Role 02: Arca Noe Consultants -->
+          <div class="grid grid-cols-12 gap-4 items-start">
+            <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
+              02
+            </div>
+            <div class="col-span-10 sm:col-span-11">
+              <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-2">
+                <div class="card-header-inner flex items-center justify-between gap-4">
+                  <div class="min-w-0">
+                    <span class="font-mono text-xs text-ink-dim block mb-1">Feb 2025 &ndash; May 2025</span>
+                    <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
+                      Arca Noe Consultants &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Executive</span>
+                    </h3>
+                  </div>
+                  <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
+                    <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                    <span class="bar-2 absolute h-full w-px bg-amber"></span>
+                  </div>
+                </div>
+
+                <div id="work-detail-2" class="card-detail-panel" role="region">
+                  <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
+                    <p class="font-mono text-xs text-ink">Kochi, Kerala</p>
+                    <ul class="space-y-1.5 list-disc list-inside">
+                      <li>Orchestrated study-abroad marketing campaigns targeted at international education aspirants.</li>
+                      <li>Formulated specialised social media funnels generating high-intent Facebook/Instagram student inquiries.</li>
+                      <li>Led brand messaging initiatives and coordinated lead workflows with academic counselling teams.</li>
+                    </ul>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Role 03: Dotcom Creativez -->
+          <div class="grid grid-cols-12 gap-4 items-start">
+            <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
+              03
+            </div>
+            <div class="col-span-10 sm:col-span-11">
+              <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-3">
+                <div class="card-header-inner flex items-center justify-between gap-4">
+                  <div class="min-w-0">
+                    <span class="font-mono text-xs text-ink-dim block mb-1">Jun 2024 &ndash; Dec 2024</span>
+                    <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
+                      Dotcom Creativez &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Intern</span>
+                    </h3>
+                  </div>
+                  <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
+                    <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                    <span class="bar-2 absolute h-full w-px bg-amber"></span>
+                  </div>
+                </div>
+
+                <div id="work-detail-3" class="card-detail-panel" role="region">
+                  <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
+                    <p class="font-mono text-xs text-ink">Thrissur, Kerala</p>
+                    <ul class="space-y-1.5 list-disc list-inside">
+                      <li>Assisted client social media campaigns, SEO keyword mapping, and Google Ads execution.</li>
+                      <li>Generated client ad creative concepts and audience demographic targeting models.</li>
+                    </ul>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 04. SKILLS CHAPTER (2x2 Reveal Cards)                            -->
+    <!-- ================================================================= -->
+    <section id="skills" class="chapter-section py-20 border-b border-rule relative">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="crop-mark pb-6 mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+            <div class="lg:col-span-6">
+              <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
+              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
+                Technical arsenals &amp; campaign proficiencies.
+              </h2>
+            </div>
+            <div class="lg:col-span-6 lg:text-right">
+              <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
+                CHAPTER 04 &mdash; COMPETENCIES
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 h-px bg-rule mt-6" aria-hidden="true"></div>
+        </div>
+
+        <div class="reveal-group grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- Category 1: Paid Ads -->
+          <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-1">
+            <div class="card-header-inner flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Paid Advertising</h3>
+                <span class="font-mono text-[10px] text-amber uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">05</span>
+              </div>
+              <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
+                <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                <span class="bar-2 absolute h-full w-px bg-amber"></span>
+              </div>
+            </div>
+            <div id="skill-panel-1" class="card-detail-panel" role="region">
+              <div class="pt-4 mt-4 border-t border-rule flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Meta Ads (FB &amp; IG)</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Google Ads</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Campaign Optimisation</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Audience Targeting</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Bidding Strategies</span>
+              </div>
+            </div>
+          </button>
+
+          <!-- Category 2: Search & Analytics -->
+          <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-2">
+            <div class="card-header-inner flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Search &amp; Analytics</h3>
+                <span class="font-mono text-[10px] text-rose uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">05</span>
+              </div>
+              <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
+                <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                <span class="bar-2 absolute h-full w-px bg-amber"></span>
+              </div>
+            </div>
+            <div id="skill-panel-2" class="card-detail-panel" role="region">
+              <div class="pt-4 mt-4 border-t border-rule flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Technical SEO</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">On-Page Optimisation</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Keyword Research</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Search Visibility</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Performance Diagnostics</span>
+              </div>
+            </div>
+          </button>
+
+          <!-- Category 3: Content & Strategy -->
+          <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-3">
+            <div class="card-header-inner flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Content &amp; Strategy</h3>
+                <span class="font-mono text-[10px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">05</span>
+              </div>
+              <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
+                <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                <span class="bar-2 absolute h-full w-px bg-amber"></span>
+              </div>
+            </div>
+            <div id="skill-panel-3" class="card-detail-panel" role="region">
+              <div class="pt-4 mt-4 border-t border-rule flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Social Media Management</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Content Calendars</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Brand Identity</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Creative Coordination</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Conversion Funnels</span>
+              </div>
+            </div>
+          </button>
+
+          <!-- Category 4: Languages Known -->
+          <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-4">
+            <div class="card-header-inner flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Languages Known</h3>
+                <span class="font-mono text-[10px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">04</span>
+              </div>
+              <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
+                <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                <span class="bar-2 absolute h-full w-px bg-amber"></span>
+              </div>
+            </div>
+            <div id="skill-panel-4" class="card-detail-panel" role="region">
+              <div class="pt-4 mt-4 border-t border-rule grid grid-cols-2 sm:grid-cols-4 gap-2 font-mono text-xs">
+                <div class="p-2 rounded bg-bg-elevated border border-rule flex justify-between">
+                  <span>English</span><span class="text-amber font-bold">Fluent</span>
+                </div>
+                <div class="p-2 rounded bg-bg-elevated border border-rule flex justify-between">
+                  <span>Malayalam</span><span class="text-amber font-bold">Native</span>
+                </div>
+                <div class="p-2 rounded bg-bg-elevated border border-rule flex justify-between">
+                  <span>Tamil</span><span class="text-ink-dim">Conv.</span>
+                </div>
+                <div class="p-2 rounded bg-bg-elevated border border-rule flex justify-between">
+                  <span>Hindi</span><span class="text-ink-dim">Conv.</span>
+                </div>
+              </div>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 05. EDUCATION CHAPTER (clip-path circle reveal)                   -->
+    <!-- ================================================================= -->
+    <section id="education" class="chapter-section py-20 border-b border-rule relative">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="crop-mark pb-6 mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+            <div class="lg:col-span-6">
+              <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
+              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
+                Academic &amp; technical qualifications.
+              </h2>
+            </div>
+            <div class="lg:col-span-6 lg:text-right">
+              <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
+                CHAPTER 05 &mdash; FOUNDATIONS
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 h-px bg-rule mt-6" aria-hidden="true"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          
+          <!-- Card 1: ADDM -->
+          <div class="edu-card relative min-h-[140px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer" tabindex="0">
+            <div>
+              <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2024</span>
+              <h3 class="card-title font-display font-medium text-lg text-ink leading-tight mb-2">
+                Advanced Diploma in Digital Marketing (ADDM)
+              </h3>
+              <p class="font-mono text-[11px] text-ink-dim">Hover / focus for details &rarr;</p>
+            </div>
+            <div class="edu-reveal-layer absolute inset-0 bg-bg-elevated p-6 flex flex-col justify-between border border-amber/60 z-10 pointer-events-none">
+              <div>
+                <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2024 &bull; ADDM</span>
+                <h4 class="font-display font-medium text-sm text-ink mb-2">Dotin Digital Academy, Thrissur</h4>
+                <p class="text-xs text-ink-dim leading-relaxed">
+                  Specialized in full-funnel Meta Ads, Google Ads architecture, and technical on-page SEO diagnostics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: CCNA -->
+          <div class="edu-card relative min-h-[140px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer" tabindex="0">
+            <div>
+              <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest block mb-1">2023</span>
+              <h3 class="card-title font-display font-medium text-lg text-ink leading-tight mb-2">
+                Diploma in Network Engineering (CCNA)
+              </h3>
+              <p class="font-mono text-[11px] text-ink-dim">Hover / focus for details &rarr;</p>
+            </div>
+            <div class="edu-reveal-layer absolute inset-0 bg-bg-elevated p-6 flex flex-col justify-between border border-rose/60 z-10 pointer-events-none">
+              <div>
+                <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest block mb-1">2023 &bull; CCNA</span>
+                <h4 class="font-display font-medium text-sm text-ink mb-2">Skill Haara, Thrissur</h4>
+                <p class="text-xs text-ink-dim leading-relaxed">
+                  Server protocols, DNS architectures, and latency diagnostics aiding technical search engine crawlability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Psychology -->
+          <div class="edu-card relative min-h-[140px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer" tabindex="0">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-mono text-xs text-ink font-bold uppercase tracking-widest">2019&ndash;2022</span>
+                <span class="font-mono text-[9px] text-amber uppercase px-1.5 py-0.5 rounded bg-bg-elevated border border-rule">consumer behaviour</span>
+              </div>
+              <h3 class="card-title font-display font-medium text-lg text-ink leading-tight mb-2">
+                Bachelor's Degree in Psychology
+              </h3>
+              <p class="font-mono text-[11px] text-ink-dim">Hover / focus for details &rarr;</p>
+            </div>
+            <div class="edu-reveal-layer absolute inset-0 bg-bg-elevated p-6 flex flex-col justify-between border border-amber/60 z-10 pointer-events-none">
+              <div>
+                <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2019&ndash;2022 &bull; B.Sc Psychology</span>
+                <h4 class="font-display font-medium text-sm text-ink mb-2">MES Asmabi College, Kodungallur</h4>
+                <p class="text-xs text-ink-dim leading-relaxed">
+                  Study of cognitive heuristics, perception, and human decision systems applied directly to conversion rate optimization.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- 06. CONTACT CHAPTER (03. Single-Space Placeholder Fields)         -->
+    <!-- ================================================================= -->
+    <section id="contact" class="chapter-section py-20 relative">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="crop-mark pb-6 mb-12">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
+            <div class="lg:col-span-6">
+              <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
+              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
+                Initiate collaboration or campaign consultation.
+              </h2>
+            </div>
+            <div class="lg:col-span-6 lg:text-right">
+              <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
+                CHAPTER 06 &mdash; DIRECT TRANSMISSION
+              </p>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 h-px bg-rule mt-6" aria-hidden="true"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Left: 4 Direct Contact Cards (Semantic <a>) -->
+          <div class="lg:col-span-5 space-y-3 font-mono text-xs">
+            
+            <a href="mailto:gokultvibin.work@gmail.com" class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between group hover:border-amber active:scale-[0.97] transition-all">
+              <div>
+                <span class="text-[10px] text-ink-dim uppercase block">EMAIL</span>
+                <span class="text-sm font-bold text-ink group-hover:text-amber transition-colors">gokultvibin.work@gmail.com</span>
+              </div>
+              <span class="text-ink-dim group-hover:text-amber text-base transition-colors">&nearr;</span>
+            </a>
+
+            <a href="tel:+919048646762" class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between group hover:border-amber active:scale-[0.97] transition-all">
+              <div>
+                <span class="text-[10px] text-ink-dim uppercase block">PHONE &middot; WHATSAPP</span>
+                <span class="text-sm font-bold text-ink group-hover:text-amber transition-colors">+91 9048646762</span>
+              </div>
+              <span class="text-ink-dim group-hover:text-amber text-base transition-colors">&nearr;</span>
+            </a>
+
+            <div class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-ink-dim uppercase block">LOCATION</span>
+                <span class="text-sm font-bold text-ink">Kochi, Kerala, India</span>
+              </div>
+              <span class="text-rose text-xs font-bold">&bull; Active</span>
+            </div>
+
+            <a href="https://www.linkedin.com/in/gokultvibin" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between group hover:border-amber active:scale-[0.97] transition-all">
+              <div>
+                <span class="text-[10px] text-ink-dim uppercase block">LINKEDIN</span>
+                <span class="text-sm font-bold text-ink group-hover:text-amber transition-colors">linkedin.com/in/gokultvibin</span>
+              </div>
+              <span class="text-ink-dim group-hover:text-amber text-base transition-colors">&nearr;</span>
+            </a>
+
+          </div>
+
+          <!-- Right: Kinetic Label Form (placeholder=" " for bug-free CSS floating) -->
+          <div class="lg:col-span-7">
+            <div class="p-6 sm:p-8 rounded-xl border border-rule bg-bg-surface">
+              <form id="contact-form" action="#" method="POST" novalidate class="space-y-4">
+                
+                <!-- Name Field -->
+                <div class="field">
+                  <input
+                    type="text"
+                    id="form-name"
+                    name="name"
+                    required
+                    placeholder=" "
+                    autocomplete="name"
+                    class="w-full px-4 pt-5 pb-2 rounded-lg border border-rule bg-bg-elevated text-ink text-sm focus:border-amber transition-colors"
+                    aria-describedby="name-desc"
+                  >
+                  <label for="form-name">Your Name *</label>
+                  <span id="name-desc" class="sr-only">Enter your full name</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="field">
+                  <input
+                    type="email"
+                    id="form-email"
+                    name="email"
+                    required
+                    placeholder=" "
+                    autocomplete="email"
+                    class="w-full px-4 pt-5 pb-2 rounded-lg border border-rule bg-bg-elevated text-ink text-sm focus:border-amber transition-colors"
+                    aria-describedby="email-desc"
+                  >
+                  <label for="form-email">Email Address *</label>
+                  <span id="email-desc" class="sr-only">Enter your email address</span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="field">
+                  <input
+                    type="text"
+                    id="form-subject"
+                    name="subject"
+                    required
+                    placeholder=" "
+                    class="w-full px-4 pt-5 pb-2 rounded-lg border border-rule bg-bg-elevated text-ink text-sm focus:border-amber transition-colors"
+                    aria-describedby="sub-desc"
+                  >
+                  <label for="form-subject">Subject *</label>
+                  <span id="sub-desc" class="sr-only">Enter message subject</span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="field">
+                  <textarea
+                    id="form-message"
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder=" "
+                    class="w-full px-4 pt-5 pb-2 rounded-lg border border-rule bg-bg-elevated text-ink text-sm focus:border-amber transition-colors resize-y"
+                    aria-describedby="msg-desc"
+                  ></textarea>
+                  <label for="form-message">Message Scope *</label>
+                  <span id="msg-desc" class="sr-only">Enter your campaign inquiry details</span>
+                </div>
+
+                <!-- 09. Semantic Action: <button type="submit"> -->
+                <button type="submit" class="w-full py-3 px-6 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.14em] hover:bg-amber-hi active:scale-[0.98] transition-all">
+                  Transmit Inquiry &rarr;
+                </button>
+
+                <div class="pt-1 text-center">
+                  <a href="https://wa.me/919048646762?text=Hello%20Gokul,%20reaching%20out%20via%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="font-mono text-[11px] text-ink-dim hover:text-amber transition-colors inline-flex items-center gap-1">
+                    <span>Direct WhatsApp Channel</span>
+                    <span>&rarr;</span>
+                  </a>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================== -->
+  <!-- FOOTER & BACK TO TOP                                                -->
+  <!-- =================================================================== -->
+  <footer class="border-t border-rule bg-bg-base py-12 text-ink-dim font-mono text-xs">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+      <div>
+        <span class="text-ink font-bold tracking-wider">GOKUL T VIBIN</span>
+        <p class="text-[11px] text-ink-dim/80 mt-1">&copy; <span id="year">2026</span> All rights reserved. Editorial Edition.</p>
+      </div>
+
+      <div class="flex gap-4 text-[11px] md:justify-center">
+        <a href="#about" class="hover:text-amber transition-colors">02 About</a>
+        <a href="#work" class="hover:text-amber transition-colors">03 Work</a>
+        <a href="#skills" class="hover:text-amber transition-colors">04 Skills</a>
+        <a href="#contact" class="hover:text-amber transition-colors">06 Contact</a>
+      </div>
+
+      <div class="md:text-right text-[11px]">
+        <span>KOCHI, KERALA, IN &bull; 09:30&ndash;18:30 IST</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 09. Semantic Action: <button> for Back to Top -->
+  <button id="back-to-top" hidden type="button" class="fixed bottom-6 right-6 z-40 w-10 h-10 rounded-lg bg-amber text-ink-inverse font-mono font-bold items-center justify-center shadow-2xl hover:bg-amber-hi transition-all" aria-label="Return to top of page">
+    &uarr;
+  </button>
+
+  <!-- Status Toast Notification -->
+  <div id="toast" role="status" aria-live="polite" class="fixed top-6 right-6 z-50 pointer-events-none opacity-0 transition-opacity duration-300">
+    <div class="px-4 py-2.5 rounded-lg bg-bg-elevated border border-amber text-ink font-mono text-xs flex items-center gap-2 shadow-2xl">
+      <span class="w-2 h-2 rounded-full bg-amber"></span>
+      <span>Inquiry prepared. Mail client opening...</span>
+    </div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- VANILLA JAVASCRIPT LOGIC (Strictly <= 120 lines, fully debugged)    -->
+  <!-- =================================================================== -->
+  <script>
+    // 1. Year Update
+    document.getElementById('year')?.replaceChildren(new Date().getFullYear());
+
+    // 2. Native Precision Cursor Active
+
+    // 3. Mobile Menu Toggle (@starting-style + hidden attribute)
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    function toggleMenu(open) {
+      menuBtn?.setAttribute('aria-expanded', String(open));
+      if (menu) {
+        if (open) menu.removeAttribute('hidden');
+        else menu.setAttribute('hidden', '');
+      }
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    menuBtn?.addEventListener('click', () => toggleMenu(menu?.hasAttribute('hidden') ?? false));
+    document.querySelectorAll('.menu-link').forEach(l => l.addEventListener('click', () => toggleMenu(false)));
+
+    // 4. Accordion + 06. Dynamic View Transitions Name Assignment
+    const cards = document.querySelectorAll('.reveal-card');
+    cards.forEach((card, i) => {
+      card.dataset.vtName = 'card-' + i;
+    });
+
+    function toggleCard(card) {
+      const group = card.closest('.reveal-group');
+      const isExpanded = card.getAttribute('aria-expanded') === 'true';
+      const execute = () => {
+        group?.querySelectorAll('.reveal-card').forEach(c => {
+          c.setAttribute('aria-expanded', 'false');
+          c.classList.remove('is-open');
+          c.style.viewTransitionName = '';
+        });
+        if (!isExpanded) {
+          card.setAttribute('aria-expanded', 'true');
+          card.classList.add('is-open');
+          card.style.viewTransitionName = card.dataset.vtName;
+        }
+      };
+      if (document.startViewTransition && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.startViewTransition(execute);
+      } else {
+        execute();
+      }
+      setTimeout(() => { card.style.viewTransitionName = ''; }, 320);
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => toggleCard(card));
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          card.setAttribute('aria-expanded', 'false');
+          card.classList.remove('is-open');
+          card.style.viewTransitionName = '';
+        }
+      });
+    });
+
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.reveal-group')) {
+        cards.forEach(c => {
+          c.setAttribute('aria-expanded', 'false');
+          c.classList.remove('is-open');
+          c.style.viewTransitionName = '';
+        });
+      }
+    });
+
+    // 5. Numerical Counter Animation (JS IntersectionObserver + rAF ticker)
+    const counters = document.querySelectorAll('.counter');
+    if (counters.length) {
+      const dur = 900;
+      const tick = (el, target, suffix = '') => {
+        const start = performance.now();
+        const step = (t) => {
+          const p = Math.min((t - start) / dur, 1);
+          el.textContent = Math.floor(p * target) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      };
+
+      const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.dataset.target || '0', 10);
+            const suffix = el.dataset.suffix || '';
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+              el.textContent = target + suffix;
+            } else {
+              tick(el, target, suffix);
+            }
+            observer.unobserve(el);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      counters.forEach(c => obs.observe(c));
+    }
+
+    // 6. Parallax for Hero Layered Ad Artifacts
+    const parallaxItems = document.querySelectorAll('[data-parallax]');
+    window.addEventListener('scroll', () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const y = window.scrollY;
+      parallaxItems.forEach(el => {
+        const speed = parseFloat(el.getAttribute('data-parallax') || '0.04');
+        el.style.transform = `translate3d(0, ${y * speed}px, 0)`;
+      });
+    }, { passive: true });
+
+    // 7. Form Submission & Mailto Transmission
+    const form = document.getElementById('contact-form');
+    const toast = document.getElementById('toast');
+    form?.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('form-name')?.value.trim();
+      const email = document.getElementById('form-email')?.value.trim();
+      const sub = document.getElementById('form-subject')?.value.trim();
+      const msg = document.getElementById('form-message')?.value.trim();
+      if (!name || !email || !sub || !msg) return;
+
+      const mailto = `mailto:gokultvibin.work@gmail.com?subject=${encodeURIComponent('[Inquiry] ' + sub)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + msg)}`;
+      window.location.href = mailto;
+      if (toast) {
+        toast.style.opacity = '1';
+        setTimeout(() => { toast.style.opacity = '0'; }, 4000);
+      }
+      form.reset();
+    });
+
+    // 8. Back to Top Button (@starting-style + hidden)
+    const btt = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btt?.removeAttribute('hidden');
+      } else {
+        btt?.setAttribute('hidden', '');
+      }
+    }, { passive: true });
+    btt?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+</body>
+</html>

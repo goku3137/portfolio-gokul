@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="ogGlow" cx="80%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0C111C" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ogGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(245, 241, 232, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Ground -->
+  <rect width="1200" height="630" fill="#0C111C"/>
+  <rect width="1200" height="630" fill="url(#ogGrid)"/>
+  <rect width="1200" height="630" fill="url(#ogGlow)"/>
+
+  <!-- Editorial Hairline Frame -->
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="rgba(245, 241, 232, 0.08)" stroke-width="1"/>
+
+  <!-- Editorial Corner Crop Marks -->
+  <path d="M 32 40 L 48 40 M 40 32 L 40 48" stroke="#F59E0B" stroke-width="1.5"/>
+  <path d="M 1152 40 L 1168 40 M 1160 32 L 1160 48" stroke="#F59E0B" stroke-width="1.5"/>
+  <path d="M 32 590 L 48 590 M 40 582 L 40 598" stroke="#F59E0B" stroke-width="1.5"/>
+  <path d="M 1152 590 L 1168 590 M 1160 582 L 1160 598" stroke="#F59E0B" stroke-width="1.5"/>
+
+  <!-- Monogram Badge -->
+  <rect x="80" y="80" width="48" height="48" rx="8" fill="#1D2534" stroke="rgba(245, 241, 232, 0.12)"/>
+  <text x="104" y="112" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="#F59E0B" text-anchor="middle">GV</text>
+
+  <!-- Eyebrow -->
+  <text x="144" y="110" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="500" fill="#A8AEB8" letter-spacing="3">01 / KOCHI, KERALA &bull; PERFORMANCE MARKETING</text>
+
+  <!-- Main Headline -->
+  <text x="80" y="270" font-family="'Space Grotesk', system-ui, sans-serif" font-size="76" font-weight="600" fill="#F5F1E8" letter-spacing="-2">
+    GOKUL T VIBIN
+  </text>
+  <text x="80" y="340" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="600" fill="#F59E0B" letter-spacing="4">
+    DIGITAL MARKETING EXECUTIVE
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#A8AEB8">
+    Psychology-led performance marketing across Meta Ads, Google Ads, and technical SEO funnels.
+  </text>
+
+  <!-- Metrics Strip on Right -->
+  <g transform="translate(820, 240)">
+    <rect width="300" height="190" rx="12" fill="#1D2534" stroke="rgba(245, 241, 232, 0.1)"/>
+    <text x="24" y="38" font-family="'JetBrains Mono', monospace" font-size="11" fill="#A8AEB8" letter-spacing="1">VERIFIED CAMPAIGN FOCUS</text>
+    <line x1="24" y1="52" x2="276" y2="52" stroke="rgba(245, 241, 232, 0.08)"/>
+    
+    <text x="24" y="88" font-family="'JetBrains Mono', monospace" font-size="14" fill="#A8AEB8">CTR DELTA</text>
+    <text x="276" y="88" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#FB7185" text-anchor="end">+2.4x</text>
+
+    <text x="24" y="126" font-family="'JetBrains Mono', monospace" font-size="14" fill="#A8AEB8">CPL EFFICIENCY</text>
+    <text x="276" y="126" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#FB7185" text-anchor="end">-38%</text>
+
+    <text x="24" y="164" font-family="'JetBrains Mono', monospace" font-size="14" fill="#A8AEB8">TARGET ROAS</text>
+    <text x="276" y="164" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#F59E0B" text-anchor="end">4.1x</text>
+  </g>
+
+  <!-- Bottom URL -->
+  <text x="80" y="530" font-family="'JetBrains Mono', monospace" font-size="16" fill="#F5F1E8">gokultvibin.com</text>
+  <text x="1120" y="530" font-family="'JetBrains Mono', monospace" font-size="13" fill="#A8AEB8" text-anchor="end">gokultvibin.work@gmail.com &bull; +91 9048646762</text>
+</svg>
+
