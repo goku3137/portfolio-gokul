@@ -9,7 +9,7 @@
 
 ```
 gokul-dm/
-├── index.html                   # Single-file production portfolio with 27 verified proofs
+├── index.html                   # Single-file production portfolio with 33 verified proofs
 ├── robots.txt                   # Search crawler directives
 ├── sitemap.xml                  # Canonical XML sitemap for SEO
 ├── vercel.json                  # Vercel deployment & security headers
@@ -19,7 +19,7 @@ gokul-dm/
     ├── gokul-avatar.svg         # Bespoke monogram executive fallback avatar
     ├── Gokul-TVibin-Resume.pdf  # Valid, self-contained candidate resume
     ├── og-image.svg             # 1200x630 OpenGraph social share card
-    └── work/                    # 27 verified campaign assets & proof vault
+    └── work/                    # 33 verified campaign assets & proof vault
         ├── levendos-meta-ads-scale.jpg          # Active WhatsApp scaling (4,233+ convos @ ₹4.81)
         ├── levendos-meta-ads-whatsapp.png        # 150+ ad sets (1,716 leads @ ₹3.24)
         ├── arcanoe-meta-ads-mbbs.jpg            # MBBS overseas parent pipeline (₹39.52 CPL)
@@ -44,10 +44,17 @@ gokul-dm/
         ├── echowave-bakrid-typography.jpg       # Echowave Bakrid handcrafted Malayalam lettering
         ├── laark-fitness-grand-opening.jpg      # Laark Fitness Chenthrappinni gym grand opening
         ├── brand-quadrill-demolition.jpg        # Quadrill Demolition B2B vector identity
+        ├── brand-quadrill-logo-transparent.png  # Quadrill Demolition transparent vector logo
         ├── brand-quadrill-identity.pdf          # Full vector identity guidelines document
         ├── lifestyle-essentials-ecommerce.jpg   # Modern lifestyle everyday essentials catalog
         ├── levendos-hiring-red.jpg              # Levendos Gifts in-house talent recruitment (Red)
-        └── levendos-hiring-cyan.jpg             # Levendos Gifts 3D tech recruitment call (Cyan)
+        ├── levendos-hiring-cyan.jpg             # Levendos Gifts 3D tech recruitment call (Cyan)
+        ├── laark-fitness-laarkonam-mahabali.jpg # Laark Fitness "LAARKONAM 2025" Mahabali dumbbells
+        ├── echowave-gandhi-influencer.jpg       # Echowave "Influencer of peace" Gandhi laptop tribute
+        ├── echowave-brand-superwoman-moon.jpg   # Echowave "Your Brand Leads" Superwoman crimson moon
+        ├── laark-fitness-neon-deadlift.jpg      # Laark Fitness neon bodybuilding deadlift opening
+        ├── levendos-hiring-chair-gold.jpg       # Levendos executive leather chair gold spotlight
+        └── laark-fitness-split-shoot.jpg        # Laark Fitness athletic split-frame photoshoot
 ```
 
 ---
@@ -80,27 +87,45 @@ Grounded in **classical color theory** for maximum conversion tension and visual
 
 ## ⚡ Key Engineered Features
 
-1. **27 Verified Campaign & Creative Proofs**: Meta Ads Manager dashboards, high-ticket wedding funnels, study-abroad pipelines, and viral agency creatives.
+1. **33 Verified Campaign & Creative Proofs**: Meta Ads Manager dashboards, high-ticket wedding funnels, study-abroad pipelines, and viral agency creatives.
 2. **Interactive Proof Inspector & Lightbox**: Full-resolution image preview with Prev/Next navigation, arrow-key controls, key metrics, channel information, and detailed strategic breakdowns.
-3. **Responsive Proof Filters**: Instant zero-reload filtering across `All Proof (27)`, `Meta Ads & Funnels (8)`, `Wedding & High-Ticket (4)`, `Creative & Viral (9)`, and `Branding & Launches (6)`.
+3. **Responsive Proof Filters**: Instant zero-reload filtering across `All Proof (33)`, `Meta Ads & Funnels (9)`, `Wedding & High-Ticket (4)`, `Creative & Viral (13)`, and `Branding & Launches (10)`.
 4. **Authentic Profile Representation**: High-resolution candidate portrait photo (`assets/profile.jpg`) integrated with graceful SVG fallback.
 5. **Zero-Jitter Interaction Architecture**: Click-only card accordions, no hover-triggered layout shifts, smooth transitions.
 6. **Consumer Psychology Integration**: Highlights Gokul's unique educational foundation — B.Sc in Psychology (consumer heuristics & loss aversion) + CCNA Network Infrastructure (latency & crawlability) + Full-Funnel Digital Marketing.
 
 ---
 
-## 🚀 Instant Deployment Guide
+## 🚀 How to Host & Update on Vercel
 
-Because the entire website is self-contained with no npm or build scripts, you can deploy it in under 60 seconds:
+Your portfolio is fully self-contained (HTML, CSS via Tailwind CDN, and assets) with no npm build required. Here are the 2 simplest ways to update your live deployment at **gokul-t-vibin.vercel.app**:
 
-### Push to GitHub / Vercel
+### Option 1: Instant Terminal Deploy via Vercel CLI (Recommended)
+Run in PowerShell inside `f:\CODE\portfolio\gokul-dm`:
 ```powershell
-cd f:\CODE\portfolio\gokul-dm
-git add .
-git commit -m "feat: complete proof vault with 27 verified client campaigns and profile portrait"
-git push origin main
+npx vercel --prod
 ```
-Vercel will detect the push and automatically deploy the updated portfolio live!
+- When asked `Set up and deploy?`, press `Y`.
+- When asked `Which scope?`, choose your account (`goku-9682`).
+- When asked `Link to existing project?`, press `Y` and select `gokul-t-vibin`.
+In 5–10 seconds, all 33 campaign assets and the latest `index.html` will be live on `https://gokul-t-vibin.vercel.app`!
+
+### Option 2: Browser Drag-and-Drop (Vercel Drop)
+If you prefer the web dashboard:
+1. Open [vercel.com/new](https://vercel.com/new).
+2. Look for the **"Deploy a third-party Git repository or drag and drop a folder"** section.
+3. Drag the entire folder `f:\CODE\portfolio\gokul-dm` (or a `.zip` of it) into the drop zone.
+4. Set the project name to `gokul-t-vibin` and click **Deploy**.
+
+### Option 3: Automatic GitHub Sync (Best Practice)
+1. Push this local git repository to GitHub:
+   ```powershell
+   git remote add origin https://github.com/goku-9682/gokul-portfolio.git
+   git branch -M main
+   git push -u origin main
+   ```
+2. In your Vercel Project Settings (`https://vercel.com/goku-9682/gokul-t-vibin/settings`), go to **Git** and connect the GitHub repository.
+3. Every future `git push` will now auto-deploy your site instantly!
 
 ---
 
