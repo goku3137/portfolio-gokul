@@ -7,8 +7,8 @@
   <!-- =================================================================== -->
   <!-- META & SEO — GOKUL T VIBIN                                          -->
   <!-- =================================================================== -->
-  <title>Gokul T Vibin — Digital Marketing Executive · Kochi</title>
-  <meta name="description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and conversion funnels in Kochi, Kerala.">
+  <title>Gokul T Vibin — Digital Marketing Executive · Kochi, Kerala</title>
+  <meta name="description" content="Psychology-led performance marketing executive in Kochi, Kerala. 15,000+ WhatsApp leads generated, Meta Ads CBO/ABO scaling, technical SEO, and viral creative direction.">
   <meta name="author" content="Gokul T Vibin">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gokultvibin.com/">
@@ -16,14 +16,14 @@
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Gokul T Vibin — Digital Marketing Executive · Kochi">
-  <meta property="og:description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and conversion funnels.">
+  <meta property="og:description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and high-conversion messaging funnels. 15,000+ verified leads.">
   <meta property="og:url" content="https://gokultvibin.com/">
   <meta property="og:image" content="https://gokultvibin.com/assets/og-image.svg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Gokul T Vibin — Digital Marketing Executive · Kochi">
-  <meta name="twitter:description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and conversion funnels.">
+  <meta name="twitter:description" content="Psychology-led performance marketing across Meta Ads, Google Ads, technical SEO, and high-conversion messaging funnels.">
   <meta name="twitter:image" content="https://gokultvibin.com/assets/og-image.svg">
 
   <!-- JSON-LD Person Schema -->
@@ -45,12 +45,13 @@
       "https://www.linkedin.com/in/gokultvibin"
     ],
     "knowsAbout": [
-      "Meta Ads",
-      "Google Ads",
-      "Technical SEO",
-      "Lead Generation",
-      "Consumer Psychology",
-      "Conversion Rate Optimization"
+      "Meta Ads Management",
+      "WhatsApp Lead Generation",
+      "Google Ads Architecture",
+      "Consumer Psychology & Behavioral Economics",
+      "Technical SEO & Crawl Optimization",
+      "Conversion Rate Optimization (CRO)",
+      "Vernacular Creative Direction & Copywriting"
     ]
   }
   </script>
@@ -61,7 +62,7 @@
   <!-- Google Fonts: Space Grotesk (300-700), Instrument Serif (italic), JetBrains Mono, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -107,14 +108,14 @@
       contain-intrinsic-size: 1px 700px;
     }
 
-    /* 04. CSS Counters for Editorial Auto-Numbering */
+    /* CSS Counters for Editorial Auto-Numbering */
     body { counter-reset: sec 0; }
     .chapter-section { counter-increment: sec; }
     .chapter-num::before {
       content: counter(sec, decimal-leading-zero) " / 06";
     }
 
-    /* 08. Text-wrap discipline: balance on headings, pretty on short deks */
+    /* Text-wrap discipline */
     h1, h2, h3 { text-wrap: balance; }
     .dek, .card-title { text-wrap: pretty; }
 
@@ -127,7 +128,7 @@
       transition: color 150ms ease;
     }
 
-    /* 03. animation-timeline: view() for entrance reveals */
+    /* animation-timeline: view() for entrance reveals */
     @supports (animation-timeline: view()) {
       .scroll-reveal {
         opacity: 0;
@@ -155,7 +156,7 @@
       filter: saturate(1);
     }
 
-    /* 04. Bug Fix: Collapsed Panel contain: layout style (no content-visibility thrashing) */
+    /* Collapsed Panel contain: layout style */
     .card-detail-panel {
       contain: layout style;
       overflow: hidden;
@@ -165,7 +166,7 @@
     }
     .reveal-card.is-open .card-detail-panel,
     .reveal-card[aria-expanded="true"] .card-detail-panel {
-      max-height: 480px;
+      max-height: 520px;
       opacity: 1;
     }
 
@@ -183,7 +184,7 @@
       transform: rotate(45deg);
     }
 
-    /* 06. clip-path: circle() on Education Cards */
+    /* clip-path: circle() on Education Cards */
     .edu-card .edu-reveal-layer {
       clip-path: circle(0% at 50% 50%);
       transition: clip-path 400ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -194,7 +195,7 @@
       clip-path: circle(88% at 50% 50%);
     }
 
-    /* 08. Container Queries */
+    /* Container Queries */
     .reveal-card {
       container-type: inline-size;
       transition: border-color 200ms, background-color 200ms;
@@ -203,7 +204,7 @@
       .card-header-inner { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
     }
 
-    /* 03. Bug Fix: Floating Labels requiring placeholder=" " */
+    /* Floating Labels */
     .field {
       position: relative;
     }
@@ -232,14 +233,14 @@
       color: #F59E0B;
     }
 
-    /* 07. Bug Fix: @starting-style with transition-behavior: allow-discrete */
+    /* Mobile Menu */
     .mobile-menu {
       opacity: 1;
       transform: translateY(0);
       transition: opacity 220ms ease, transform 220ms ease, display 220ms ease allow-discrete;
     }
     .mobile-menu[hidden] {
-      display: none;
+      display: none !important;
       opacity: 0;
       transform: translateY(-12px);
     }
@@ -254,7 +255,7 @@
       transition: opacity 220ms ease, transform 220ms ease, display 220ms ease allow-discrete;
     }
     #back-to-top[hidden] {
-      display: none;
+      display: none !important;
       opacity: 0;
       transform: scale(0.85);
     }
@@ -265,7 +266,7 @@
       }
     }
 
-    /* Native Cursor Precision (Cursor Dot Disabled to prevent hover interception & jitter) */
+    /* Native Cursor Precision */
     #cursor-dot {
       display: none !important;
     }
@@ -315,7 +316,7 @@
       to { transform: rotate(360deg); }
     }
 
-    /* 10. Bug Fix: Pulse Dot using --amber-hi (#FBBF24), 1.8s ease-in-out */
+    /* Pulse Dot using --amber-hi (#FBBF24), 1.8s ease-in-out */
     @keyframes pulseAmberHi {
       0%, 100% { opacity: 0.35; transform: scale(0.92); }
       50% { opacity: 1; transform: scale(1.12); }
@@ -363,19 +364,45 @@
       will-change: transform;
     }
 
-    /* Hero Subline (Stable & Visible) */
-    .h1-wipe-subline {
-      opacity: 0.9;
-      transition: opacity 200ms ease;
-    }
-    .hero-h1-wrap:hover .h1-wipe-subline {
-      opacity: 1;
-    }
-
     /* Focus Ring (WCAG AAA) */
     a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, [tabindex="0"]:focus-visible {
       outline: 2px solid #F59E0B !important;
       outline-offset: 2px !important;
+    }
+
+    /* Modal Lightbox Transitions */
+    #image-modal {
+      transition: opacity 220ms ease, visibility 220ms ease;
+    }
+    #image-modal[aria-hidden="true"] {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    #image-modal[aria-hidden="false"] {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Filter Active Button */
+    .filter-btn.active {
+      background-color: #F59E0B;
+      color: #0C111C;
+      border-color: #F59E0B;
+      font-weight: 700;
+    }
+
+    /* Gallery Card Image Zoom Preview */
+    .gallery-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-img-wrap img {
+      transition: transform 300ms ease;
+    }
+    .gallery-card:hover .gallery-img-wrap img {
+      transform: scale(1.03);
     }
 
     /* Reduced Motion */
@@ -390,16 +417,15 @@
       #cursor-dot { display: none !important; }
       .pulse-amber { animation: none !important; opacity: 1 !important; }
       .scroll-reveal { opacity: 1 !important; transform: none !important; }
-      .h1-wipe-subline { clip-path: inset(0 0 0 0) !important; }
     }
 
     /* Print Stylesheet */
     @media print {
       body { background-color: #ffffff !important; color: #0c111c !important; }
-      header, #cursor-dot, svg.fixed, #back-to-top, #toast, .animate-marquee, .mobile-menu { display: none !important; }
+      header, #cursor-dot, svg.fixed, #back-to-top, #toast, .animate-marquee, .mobile-menu, #image-modal { display: none !important; }
       .card-detail-panel { max-height: none !important; opacity: 1 !important; display: block !important; }
       .edu-reveal-layer { clip-path: none !important; position: static !important; display: block !important; border: 1px solid #d1d5db !important; background: #f9fafb !important; color: #0c111c !important; margin-top: 0.5rem !important; }
-      .reveal-card, .edu-card { border: 1px solid #e5e7eb !important; background: #ffffff !important; color: #0c111c !important; break-inside: avoid; }
+      .reveal-card, .edu-card, .gallery-card { border: 1px solid #e5e7eb !important; background: #ffffff !important; color: #0c111c !important; break-inside: avoid; }
       .chapter-section { border-bottom: 1px solid #e5e7eb !important; break-inside: avoid; }
       h1, h2, h3, h4, span, p { color: #0c111c !important; }
       .text-amber, .text-rose { color: #b45309 !important; font-weight: 600 !important; }
@@ -409,10 +435,7 @@
 
 <body class="bg-bg-base text-ink font-sans antialiased selection:bg-amber selection:text-ink-inverse relative overflow-x-hidden min-h-screen">
 
-  <!-- 12. Blend-Difference Cursor Dot -->
-  <div id="cursor-dot" aria-hidden="true"></div>
-
-  <!-- 01. SVG feTurbulence Grain Overlay (Full Viewport, Non-Interfering) -->
+  <!-- SVG feTurbulence Grain Overlay (Full Viewport, Non-Interfering) -->
   <svg class="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-[0.035] mix-blend-overlay select-none" style="pointer-events: none !important;" aria-hidden="true">
     <filter id="grain">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
@@ -426,51 +449,52 @@
   </a>
 
   <!-- =================================================================== -->
-  <!-- NAVIGATION (Semantic <a> elements, sticky backdrop blur)          -->
+  <!-- NAVIGATION (Semantic anchors, sticky backdrop blur)                 -->
   <!-- =================================================================== -->
-  <header class="sticky top-0 left-0 right-0 z-40 h-[60px] border-b border-rule bg-bg-base/85 backdrop-blur-[12px] flex items-center">
+  <header class="sticky top-0 left-0 right-0 z-40 h-[64px] border-b border-rule bg-bg-base/90 backdrop-blur-[12px] flex items-center">
     <div class="max-w-6xl mx-auto px-6 w-full flex items-center justify-between">
       
       <!-- Brand Link: GOKUL · T · VIBIN -->
-      <a href="#hero" class="flex items-center gap-1 font-mono text-xs uppercase tracking-[0.18em] text-ink hover:text-amber transition-colors focus:outline-none">
-        <span>GOKUL</span>
-        <span class="text-amber font-bold">&middot;</span>
+      <a href="#hero" class="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-ink hover:text-amber transition-colors focus:outline-none">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber inline-block"></span>
+        <span class="font-bold">GOKUL</span>
+        <span class="text-amber">&middot;</span>
         <span>T</span>
-        <span class="text-amber font-bold">&middot;</span>
+        <span class="text-amber">&middot;</span>
         <span>VIBIN</span>
       </a>
 
-      <!-- Desktop Nav Links (Semantic <a>) -->
+      <!-- Desktop Nav Links -->
       <nav class="hidden md:flex items-center gap-7 font-mono text-xs uppercase tracking-[0.14em]" aria-label="Primary Navigation">
         <a href="#about" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
-          <span>About</span>
+          <span>02 / About</span>
           <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
         </a>
         <a href="#work" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
-          <span>Work</span>
+          <span>03 / Proof &amp; Work</span>
           <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
         </a>
         <a href="#skills" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
-          <span>Skills</span>
+          <span>04 / Competencies</span>
           <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
         </a>
         <a href="#education" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
-          <span>Education</span>
+          <span>05 / Credentials</span>
           <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
         </a>
         <a href="#contact" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
-          <span>Contact</span>
+          <span>06 / Contact</span>
           <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
         </a>
       </nav>
 
-      <!-- Right Action: Semantic <a> Buttons -->
+      <!-- Right Action: Resume & CTA -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="font-mono text-xs text-ink-dim hover:text-amber tracking-[0.12em] uppercase transition-colors px-2 py-1">
           CV &darr;
         </a>
-        <a href="#contact" class="px-3.5 py-1.5 rounded-full bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.12em] hover:bg-amber-hi transition-all">
-          Get in Touch
+        <a href="#contact" class="px-4 py-2 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.12em] hover:bg-amber-hi transition-all">
+          Initiate Contact
         </a>
       </div>
 
@@ -485,23 +509,23 @@
 
     </div>
 
-    <!-- 07. Mobile Menu (Uses hidden + @starting-style with allow-discrete) -->
-    <div id="mobile-menu" hidden class="mobile-menu fixed inset-0 top-[60px] bg-bg-base z-30 flex flex-col justify-between p-8 border-b border-rule">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" hidden class="mobile-menu fixed inset-0 top-[64px] bg-bg-base z-30 flex flex-col justify-between p-8 border-b border-rule">
       <nav class="flex flex-col space-y-5 font-mono text-base uppercase tracking-[0.15em] pt-4">
         <a href="#about" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
-          <span>02 &bull; About</span>
+          <span>02 &bull; About Gokul</span>
           <span class="text-ink-dim">&rarr;</span>
         </a>
         <a href="#work" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
-          <span>03 &bull; Work Trajectory</span>
+          <span>03 &bull; Campaigns &amp; Proof</span>
           <span class="text-ink-dim">&rarr;</span>
         </a>
         <a href="#skills" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
-          <span>04 &bull; Competencies</span>
+          <span>04 &bull; Executive Competencies</span>
           <span class="text-ink-dim">&rarr;</span>
         </a>
         <a href="#education" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
-          <span>05 &bull; Education</span>
+          <span>05 &bull; Education &amp; CCNA</span>
           <span class="text-ink-dim">&rarr;</span>
         </a>
         <a href="#contact" class="menu-link py-2 border-b border-rule text-amber flex justify-between">
@@ -528,98 +552,134 @@
     <!-- ================================================================= -->
     <section id="hero" class="chapter-section min-h-[92svh] flex flex-col justify-between pt-12 pb-8 border-b border-rule relative overflow-hidden">
       
-      <!-- 01. Bug Fix: Warm Amber Radial Ambient Glow -->
-      <div class="absolute right-0 top-1/4 w-[520px] h-[520px] bg-[radial-gradient(ellipse_at_70%_40%,rgba(245,158,11,0.10),transparent_60%)] blur-[80px] pointer-events-none -z-10" aria-hidden="true"></div>
+      <!-- Warm Amber Ambient Glow -->
+      <div class="absolute right-0 top-1/4 w-[560px] h-[560px] bg-[radial-gradient(ellipse_at_70%_40%,rgba(245,158,11,0.12),transparent_65%)] blur-[90px] pointer-events-none -z-10" aria-hidden="true"></div>
 
       <div class="max-w-6xl mx-auto px-6 w-full flex-1 flex flex-col justify-center py-8">
         
         <!-- Eyebrow: Auto-counter + Role -->
         <div class="flex items-center gap-3 mb-6 font-mono text-xs uppercase tracking-[0.16em] text-ink-dim">
-          <span class="text-amber font-bold">01 / HELLO</span>
+          <span class="text-amber font-bold">01 / DISPATCH</span>
           <span class="w-3 h-px bg-rule" aria-hidden="true"></span>
-          <span>Digital Marketing Executive &middot; Kochi, IN</span>
+          <span>Digital Marketing Executive &middot; Kochi, Kerala</span>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <!-- Headline Column -->
           <div class="lg:col-span-7">
-            <div class="hero-h1-wrap cursor-pointer select-none group" tabindex="0" role="region" aria-label="Hero statement">
+            <div class="hero-h1-wrap select-none group" tabindex="0" role="region" aria-label="Hero statement">
               <h1 class="vf-headline font-display font-medium text-4xl sm:text-6xl lg:text-[4.75rem] leading-[0.96] tracking-[-0.035em] text-ink mb-4">
-                Data into <br>
-                <span class="text-amber font-serif italic font-normal tracking-normal">brand growth.</span>
+                Consumer mind into <br>
+                <span class="text-amber font-serif italic font-normal tracking-normal">measurable scale.</span>
               </h1>
               
               <p class="h1-wipe-subline dek font-serif italic text-lg sm:text-2xl text-ink-dim leading-snug max-w-[42ch]">
-                Psychology-led performance marketing across Meta Ads, Google Ads, and conversion funnels.
+                Psychology-backed performance marketing across Meta Ads, high-conversion WhatsApp funnels, and technical SEO.
               </p>
             </div>
 
-            <!-- CTA Row: Semantic <a> links -->
+            <!-- Verified Metric Highlights Pill Strip -->
+            <div class="mt-6 flex flex-wrap items-center gap-2 font-mono text-[11px]">
+              <span class="px-2.5 py-1 rounded bg-bg-surface border border-rule text-ink-dim">
+                <strong class="text-amber font-bold">15,000+</strong> WhatsApp Leads
+              </span>
+              <span class="px-2.5 py-1 rounded bg-bg-surface border border-rule text-ink-dim">
+                <strong class="text-rose font-bold">&#8377;3.24</strong> Lowest CPL
+              </span>
+              <span class="px-2.5 py-1 rounded bg-bg-surface border border-rule text-ink-dim">
+                <strong class="text-amber font-bold">640K+</strong> E-com Reach
+              </span>
+              <span class="px-2.5 py-1 rounded bg-bg-surface border border-rule text-ink-dim">
+                <strong class="text-rose font-bold">&#8377;0.01</strong> Viral Engagement
+              </span>
+            </div>
+
+            <!-- CTA Row -->
             <div class="flex flex-wrap items-center gap-5 mt-8">
               <a href="#work" class="conic-cta conic-btn inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.14em] hover:bg-amber-hi transition-all">
-                <span>Explore My Work</span>
+                <span>View Verified Proof &amp; Work</span>
                 <span class="font-sans font-bold">&rarr;</span>
               </a>
 
               <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-ink hover:text-amber underline decoration-rule hover:decoration-amber underline-offset-4 transition-colors py-2">
-                <span>Resume &darr;</span>
+                <span>Resume (PDF) &darr;</span>
               </a>
             </div>
           </div>
 
-          <!-- Hero Visual: 3 Layered Ad Artifacts with Parallax -->
+          <!-- Hero Visual: Real Multi-Layered Campaign Proof Cards -->
           <div class="lg:col-span-5 relative flex items-center justify-center pt-4 lg:pt-0">
-            <div class="relative w-full max-w-[340px] sm:max-w-[380px] h-[370px] flex items-center justify-center">
+            <div class="relative w-full max-w-[340px] sm:max-w-[400px] h-[400px] flex items-center justify-center">
 
-              <!-- Artifact 1: Back Story Frame 9:16 -->
-              <div data-parallax="0.08" class="hidden sm:block absolute left-2 top-0 w-36 aspect-[9/16] rounded-xl border border-rule bg-bg-elevated p-2.5 -rotate-7 opacity-40 z-0 select-none">
-                <div class="flex justify-between items-center text-[7px] font-mono text-ink-dim mb-1">
-                  <span>STORY 9:16</span>
+              <!-- Artifact 1: Back Creative Card (Arca Noe Study Abroad Ad) -->
+              <div data-parallax="0.08" class="hidden sm:block absolute left-0 top-2 w-44 rounded-xl border border-rule bg-bg-elevated p-2 -rotate-6 opacity-60 z-0 select-none shadow-xl overflow-hidden">
+                <div class="flex justify-between items-center text-[8px] font-mono text-ink-dim mb-1">
+                  <span>CREATIVE ASSET</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-amber"></span>
                 </div>
-                <div class="w-full h-24 rounded bg-bg-surface border border-rule mb-2"></div>
-                <p class="font-display font-medium text-[9px] text-ink leading-tight mb-2">Study Abroad 2026</p>
-                <div class="w-full py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-[7px] text-center uppercase">Apply</div>
-                <span class="block font-mono text-[6px] text-ink-dim uppercase text-center mt-1">ILLUSTRATIVE — SAMPLE DATA</span>
+                <div class="w-full aspect-[4/5] rounded overflow-hidden bg-bg-base mb-1.5">
+                  <img src="assets/work/creative-arcanoe-sunita-williams.jpg" alt="Arca Noe Overseas Education Creative" class="w-full h-full object-cover">
+                </div>
+                <p class="font-display font-medium text-[10px] text-ink leading-tight truncate">Arca Noe &bull; Overseas Campaign</p>
+                <span class="block font-mono text-[7px] text-amber uppercase mt-0.5">High-Ticket Study Abroad</span>
               </div>
 
-              <!-- Artifact 2: Middle Feed Ad Card 4:5 -->
-              <div data-parallax="0.04" class="relative w-full sm:w-64 rounded-xl border border-rule bg-bg-surface p-4 -rotate-1 z-10 select-none shadow-2xl">
-                <div class="flex items-center justify-between text-[8px] font-mono text-ink-dim uppercase mb-2">
-                  <span>SPONSORED</span>
-                  <span class="text-rose font-bold">FEED 4:5</span>
+              <!-- Artifact 2: Middle Meta Ads Verification Card (Levendos Scale) -->
+              <div data-parallax="0.04" class="relative w-full sm:w-72 rounded-xl border border-amber/30 bg-bg-surface p-4 -rotate-1 z-10 select-none shadow-2xl">
+                <div class="flex items-center justify-between text-[9px] font-mono uppercase mb-2">
+                  <span class="flex items-center gap-1 text-rose font-bold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose pulse-amber"></span>
+                    META ADS VERIFIED
+                  </span>
+                  <span class="text-ink-dim">LEVENDOS ACC</span>
                 </div>
-                <p class="card-title text-xs text-ink font-sans leading-snug mb-3">
-                  Your IELTS score is the only thing between you and your Master's degree.
-                </p>
-                <div class="w-full aspect-square rounded-lg border border-rule bg-bg-base flex flex-col items-center justify-center p-3 text-center mb-3">
-                  <span class="font-mono text-[9px] text-amber font-bold uppercase tracking-wider">INTAKE 2026</span>
-                  <span class="font-mono text-[8px] text-ink-dim">DIRECT ADMISSIONS</span>
+
+                <div class="w-full aspect-[16/9] rounded-lg border border-rule bg-bg-base overflow-hidden mb-3">
+                  <img src="assets/work/levendos-meta-ads-scale.jpg" alt="Meta Ads Manager Proof" class="w-full h-full object-cover">
                 </div>
-                <div class="w-full py-2 px-3 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-[10px] text-center uppercase tracking-wider block">
-                  Book Free Counselling
+
+                <div class="space-y-1.5 font-mono text-xs mb-3">
+                  <div class="flex justify-between items-center pb-1 border-b border-rule">
+                    <span class="text-ink-dim text-[10px]">ACTIVE FUNNEL</span>
+                    <span class="text-ink font-bold text-[11px]">WhatsApp Conversions</span>
+                  </div>
+                  <div class="flex justify-between items-center text-[11px]">
+                    <span class="text-ink-dim">Conversations</span>
+                    <span class="text-amber font-bold">4,233+</span>
+                  </div>
+                  <div class="flex justify-between items-center text-[11px]">
+                    <span class="text-ink-dim">Cost per Result</span>
+                    <span class="text-rose font-bold">&#8377;4.81 / convo</span>
+                  </div>
                 </div>
-                <span class="block font-mono text-[7px] text-ink-dim uppercase text-center mt-2 tracking-tight">ILLUSTRATIVE — SAMPLE DATA</span>
+
+                <div class="w-full py-1.5 px-3 rounded bg-amber text-ink-inverse font-mono font-bold text-[10px] text-center uppercase tracking-wider block">
+                  Live Proof In Dashboard
+                </div>
               </div>
 
-              <!-- Artifact 3: Front Metrics Strip (05. JS Animated Numbers) -->
-              <div data-parallax="0.02" class="hidden sm:block absolute -bottom-2 right-0 w-52 rounded-xl border border-rule bg-bg-elevated p-3 z-20 select-none shadow-2xl">
-                <span class="block font-mono text-[7px] text-ink-dim uppercase tracking-wider pb-1 border-b border-rule mb-1.5">
-                  ILLUSTRATIVE — SAMPLE DATA
+              <!-- Artifact 3: Front Real Metrics Strip (Animated Numbers) -->
+              <div data-parallax="0.02" class="hidden sm:block absolute -bottom-4 right-0 w-56 rounded-xl border border-rule bg-bg-elevated p-3.5 z-20 select-none shadow-2xl">
+                <span class="block font-mono text-[8px] text-amber uppercase tracking-wider pb-1 border-b border-rule mb-2 font-bold">
+                  // VERIFIED METRICS SNAPSHOT
                 </span>
-                <div class="space-y-1 font-mono text-[11px]">
+                <div class="space-y-1.5 font-mono text-[11px]">
                   <div class="flex justify-between">
-                    <span class="text-ink-dim">CTR</span>
-                    <span class="text-rose font-bold">&blacktriangleright; +<span class="counter" data-target="2" data-suffix=".4x">0</span></span>
+                    <span class="text-ink-dim">Total Leads</span>
+                    <span class="text-amber font-bold">&blacktriangleright; <span class="counter" data-target="15000" data-suffix="+">0</span></span>
                   </div>
                   <div class="flex justify-between">
-                    <span class="text-ink-dim">CPL</span>
-                    <span class="text-rose font-bold">&blacktriangleright; &minus;<span class="counter" data-target="38" data-suffix="%">0</span></span>
+                    <span class="text-ink-dim">Lowest CPL</span>
+                    <span class="text-rose font-bold">&blacktriangleright; &#8377;<span class="counter" data-target="3" data-suffix=".24">0</span></span>
                   </div>
                   <div class="flex justify-between">
-                    <span class="text-ink-dim">ROAS</span>
-                    <span class="text-amber font-bold">&blacktriangleright; <span class="counter" data-target="4" data-suffix=".1x">0</span></span>
+                    <span class="text-ink-dim">Total Reach</span>
+                    <span class="text-amber font-bold">&blacktriangleright; <span class="counter" data-target="640" data-suffix="K+">0</span></span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-ink-dim">Viral CPE</span>
+                    <span class="text-rose font-bold">&blacktriangleright; &#8377;<span class="counter" data-target="0" data-suffix=".01">0</span></span>
                   </div>
                 </div>
               </div>
@@ -633,27 +693,27 @@
       <!-- Marquee Strip Below Hero -->
       <div class="w-full border-t border-b border-rule py-3 overflow-hidden whitespace-nowrap bg-bg-base" aria-hidden="true">
         <div class="animate-marquee font-mono text-xs uppercase tracking-[0.24em] text-ink-dim">
-          <span class="mx-6">LEAD GEN &middot;</span>
-          <span class="mx-6 text-amber">META ADS &middot;</span>
-          <span class="mx-6">SEO ARCHITECTURE &middot;</span>
-          <span class="mx-6 text-rose">GOOGLE ADS &middot;</span>
-          <span class="mx-6">BRAND STRATEGY &middot;</span>
-          <span class="mx-6">CONTENT FUNNELS &middot;</span>
-          <span class="mx-6">CONSUMER HEURISTICS &middot;</span>
-          <span class="mx-6">LEAD GEN &middot;</span>
-          <span class="mx-6 text-amber">META ADS &middot;</span>
-          <span class="mx-6">SEO ARCHITECTURE &middot;</span>
-          <span class="mx-6 text-rose">GOOGLE ADS &middot;</span>
-          <span class="mx-6">BRAND STRATEGY &middot;</span>
-          <span class="mx-6">CONTENT FUNNELS &middot;</span>
-          <span class="mx-6">CONSUMER HEURISTICS &middot;</span>
+          <span class="mx-6">WHATSAPP FUNNELS &middot;</span>
+          <span class="mx-6 text-amber">META ADS CBO/ABO &middot;</span>
+          <span class="mx-6">CPL COMPRESSION &middot;</span>
+          <span class="mx-6 text-rose">GOOGLE SEARCH ADS &middot;</span>
+          <span class="mx-6">TECHNICAL SEO ARCHITECTURE &middot;</span>
+          <span class="mx-6">VERNACULAR COPYWRITING &middot;</span>
+          <span class="mx-6">BEHAVIORAL ECONOMICS &middot;</span>
+          <span class="mx-6">WHATSAPP FUNNELS &middot;</span>
+          <span class="mx-6 text-amber">META ADS CBO/ABO &middot;</span>
+          <span class="mx-6">CPL COMPRESSION &middot;</span>
+          <span class="mx-6 text-rose">GOOGLE SEARCH ADS &middot;</span>
+          <span class="mx-6">TECHNICAL SEO ARCHITECTURE &middot;</span>
+          <span class="mx-6">VERNACULAR COPYWRITING &middot;</span>
+          <span class="mx-6">BEHAVIORAL ECONOMICS &middot;</span>
         </div>
       </div>
 
     </section>
 
     <!-- ================================================================= -->
-    <!-- 02. ABOUT CHAPTER                                                 -->
+    <!-- 02. ABOUT CHAPTER & EXECUTIVE PROFILE                             -->
     <!-- ================================================================= -->
     <section id="about" class="chapter-section py-20 border-b border-rule relative">
       <div class="max-w-6xl mx-auto px-6">
@@ -663,12 +723,12 @@
             <div class="lg:col-span-6">
               <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
               <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
-                The marketer who decodes the mind behind the click.
+                The executive who decodes the mind behind the click.
               </h2>
             </div>
             <div class="lg:col-span-6 lg:text-right">
               <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
-                CHAPTER 02 &mdash; OPERATIONAL DOCTRINE
+                CHAPTER 02 &mdash; OPERATIONAL DOCTRINE &amp; PROFILE
               </p>
             </div>
           </div>
@@ -676,22 +736,88 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-          <div class="lg:col-span-4 sticky top-24">
-            <span class="font-mono text-xs text-amber uppercase tracking-[0.16em] block mb-2 font-bold">
-              // Core Thesis
-            </span>
-            <p class="font-serif italic text-xl text-ink leading-snug">
-              &ldquo;Campaigns don't fail from bid strategies; they fail from misunderstanding human motivation.&rdquo;
-            </p>
+          
+          <!-- Left Column: Executive Identity Card -->
+          <div class="lg:col-span-4 space-y-4">
+            
+            <div class="p-5 rounded-xl border border-rule bg-bg-surface">
+              <!-- Portrait Frame with graceful image/SVG support -->
+              <div class="relative w-full aspect-square rounded-lg border border-rule bg-bg-base overflow-hidden mb-4 flex items-center justify-center group">
+                <img 
+                  id="profile-portrait"
+                  src="assets/gokul-avatar.svg" 
+                  data-photo="assets/profile.jpg"
+                  alt="Gokul T Vibin — Digital Marketing Executive" 
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                >
+                <div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-bg-base/90 border border-rule font-mono text-[9px] text-amber uppercase">
+                  Executive Profile
+                </div>
+              </div>
+
+              <!-- Persona Details -->
+              <div class="space-y-1 font-mono text-xs">
+                <div class="flex items-center justify-between pb-2 border-b border-rule">
+                  <span class="text-ink-dim">Name</span>
+                  <span class="text-ink font-bold">Gokul T Vibin</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 border-b border-rule">
+                  <span class="text-ink-dim">Role</span>
+                  <span class="text-amber font-bold">Digital Marketing Executive</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 border-b border-rule">
+                  <span class="text-ink-dim">Location</span>
+                  <span class="text-ink">Kochi &middot; Thrissur, Kerala</span>
+                </div>
+                <div class="flex items-center justify-between pt-1.5">
+                  <span class="text-ink-dim">Status</span>
+                  <span class="text-rose font-bold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose pulse-amber"></span>
+                    Available for Strategic Roles
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl border border-rule bg-bg-surface">
+              <span class="font-mono text-[10px] text-amber uppercase tracking-wider block mb-1 font-bold">
+                // EXECUTIVE DNA
+              </span>
+              <p class="font-serif italic text-base text-ink leading-snug">
+                &ldquo;B.Sc Psychology + CCNA Network Infrastructure + Full-Funnel Performance Marketing.&rdquo;
+              </p>
+            </div>
+
           </div>
 
+          <!-- Right Column: Narrative & Cognitive Approach -->
           <div class="lg:col-span-8 space-y-6 text-sm sm:text-base text-ink-dim font-sans leading-[1.75]">
             <p>
-              Holding a Bachelor's Degree in <dfn class="psych-term" tabindex="0">psychology<span class="psych-tooltip px-2.5 py-1 rounded bg-bg-elevated border border-amber font-mono text-[10px] text-amber shadow-xl">consumer behaviour &bull; perception &bull; memory</span></dfn> from MES Asmabi College, I treat advertising funnels as cognitive choice environments. When prospective clients hesitate, it is rarely due to pricing alone — it is loss aversion, cognitive friction, or unanchored trust.
+              Holding a Bachelor's Degree in <dfn class="psych-term" tabindex="0">psychology<span class="psych-tooltip px-2.5 py-1 rounded bg-bg-elevated border border-amber font-mono text-[10px] text-amber shadow-xl">consumer heuristics &bull; perception &bull; loss aversion</span></dfn> from MES Asmabi College, I treat advertising funnels not as mechanical bid auctions, but as <em>cognitive decision environments</em>.
             </p>
             <p>
-              Combined with a CCNA in Network Engineering and an Advanced Diploma in Digital Marketing, my campaigns fuse technical server-level diagnostics with high-converting creative execution across Meta Ads and Google search intent.
+              When a prospective lead hesitates on an ad, it is rarely due to pricing alone. It is cognitive friction, unanchored trust, or poor relevance. By synthesizing consumer behavioral insights with rigorous data experimentation, I design hooks that systematically address objections before they arise.
             </p>
+            <p>
+              Unlike traditional campaign managers who rely purely on dashboard defaults, my background includes a <strong>Diploma in Network Engineering (CCNA)</strong> from Skill Haara. This gives me a deep understanding of server responses, DNS routing, latency diagnostics, and crawler mechanics — critical foundations for technical SEO, Core Web Vitals, and server-side Conversions API (CAPI) tracking.
+            </p>
+
+            <!-- 3 Pillars of Gokul's Executive Approach -->
+            <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+              <div class="p-3.5 rounded-lg bg-bg-surface border border-rule">
+                <span class="text-amber font-bold block mb-1">01 / BEHAVIORAL HOOKS</span>
+                <span class="text-[11px] text-ink-dim leading-snug block">Audience-specific vernacular messaging that commands scroll-stopping attention in Malayalam &amp; English.</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-bg-surface border border-rule">
+                <span class="text-rose font-bold block mb-1">02 / FUNNEL ARCHITECTURE</span>
+                <span class="text-[11px] text-ink-dim leading-snug block">Direct-to-WhatsApp messaging engines cutting drop-offs by up to 60% compared to conventional web forms.</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-bg-surface border border-rule">
+                <span class="text-amber font-bold block mb-1">03 / TECHNICAL RIGOR</span>
+                <span class="text-[11px] text-ink-dim leading-snug block">CCNA-backed infrastructure analysis, pixel integrity, GA4 custom events, and technical SEO crawl budgets.</span>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -699,146 +825,548 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 03. WORK CHAPTER                                                  -->
+    <!-- 03. WORK CHAPTER & VERIFIED PROOF GALLERY                          -->
     <!-- ================================================================= -->
     <section id="work" class="chapter-section py-20 border-b border-rule relative">
       <div class="max-w-6xl mx-auto px-6">
         
         <div class="crop-mark pb-6 mb-12">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
-            <div class="lg:col-span-6">
+            <div class="lg:col-span-7">
               <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
-              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
-                Verified agency trajectory &amp; client campaigns.
+              <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[24ch]">
+                Verified campaign proof &amp; agency trajectory.
               </h2>
             </div>
-            <div class="lg:col-span-6 lg:text-right">
+            <div class="lg:col-span-5 lg:text-right">
               <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
-                CHAPTER 03 &mdash; TRACK RECORD
+                CHAPTER 03 &mdash; TRACK RECORD &amp; CAMPAIGN VAULT
               </p>
             </div>
           </div>
           <div class="w-full lg:w-1/2 h-px bg-rule mt-6" aria-hidden="true"></div>
         </div>
 
-        <!-- 3 Roles in Accordion Group with Left Index Rail -->
-        <div class="reveal-group space-y-4 max-w-4xl mx-auto">
-          
-          <!-- Role 01: Echowave Advertising (Current) -->
-          <div class="grid grid-cols-12 gap-4 items-start">
-            <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
-              01
-            </div>
-            <div class="col-span-10 sm:col-span-11">
-              <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-1">
-                <div class="card-header-inner flex items-center justify-between gap-4">
-                  <div class="min-w-0">
-                    <div class="flex items-center gap-2 mb-1">
-                      <!-- 01/10. Bug Fix: --rose dot only for CURRENT status pill, pulse uses --amber-hi -->
-                      <span class="w-2 h-2 rounded-full bg-rose pulse-amber shrink-0" aria-hidden="true"></span>
-                      <span class="font-mono text-[10px] text-rose uppercase tracking-wider font-bold">CURRENT</span>
-                      <span class="font-mono text-xs text-ink-dim">Jul 2025 &ndash; Aug 2026</span>
+        <!-- ------------------------------------------------------------- -->
+        <!-- SUB-SECTION 3A: EMPLOYMENT TRAJECTORY (Accordion)             -->
+        <!-- ------------------------------------------------------------- -->
+        <div class="mb-16">
+          <div class="flex items-center justify-between mb-6">
+            <span class="font-mono text-xs text-amber uppercase tracking-[0.16em] font-bold">
+              // Professional Career Trajectory
+            </span>
+            <span class="font-mono text-[11px] text-ink-dim">Click role to expand details</span>
+          </div>
+
+          <div class="reveal-group space-y-4 max-w-4xl mx-auto">
+            
+            <!-- Role 01: Echowave Advertising (Current) -->
+            <div class="grid grid-cols-12 gap-4 items-start">
+              <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
+                01
+              </div>
+              <div class="col-span-10 sm:col-span-11">
+                <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-1">
+                  <div class="card-header-inner flex items-center justify-between gap-4">
+                    <div class="min-w-0">
+                      <div class="flex items-center gap-2 mb-1">
+                        <span class="w-2 h-2 rounded-full bg-rose pulse-amber shrink-0" aria-hidden="true"></span>
+                        <span class="font-mono text-[10px] text-rose uppercase tracking-wider font-bold">CURRENT ROLE</span>
+                        <span class="font-mono text-xs text-ink-dim">Jul 2025 &ndash; Aug 2026</span>
+                      </div>
+                      <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
+                        Echowave Advertising &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Executive</span>
+                      </h3>
                     </div>
-                    <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
-                      Echowave Advertising &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Executive</span>
-                    </h3>
+                    <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
+                      <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                      <span class="bar-2 absolute h-full w-px bg-amber"></span>
+                    </div>
                   </div>
-                  <!-- Pure CSS + to X Icon -->
-                  <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
-                    <span class="bar-1 absolute w-full h-px bg-amber"></span>
-                    <span class="bar-2 absolute h-full w-px bg-amber"></span>
-                  </div>
-                </div>
 
-                <div id="work-detail-1" class="card-detail-panel" role="region">
-                  <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
-                    <p class="font-mono text-xs text-ink">Kodungallur, Kerala</p>
-                    <ul class="space-y-1.5 list-disc list-inside">
-                      <li>Managed multi-platform social media accounts, content strategies, and monthly calendars.</li>
-                      <li>Executed and optimised high-ROAS Meta Ads campaigns for lead generation and brand awareness.</li>
-                      <li>Conducted technical SEO: keyword research, on-page optimisation, and structured metadata.</li>
-                      <li>Developed Google Ads competence: campaign structure, bidding strategies, and performance diagnostics.</li>
-                      <li>Coordinated marketing creative design pipelines and content production.</li>
-                    </ul>
+                  <div id="work-detail-1" class="card-detail-panel" role="region">
+                    <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
+                      <p class="font-mono text-xs text-ink">Kodungallur &middot; Kochi, Kerala</p>
+                      <ul class="space-y-1.5 list-disc list-inside">
+                        <li>Directed high-performance Meta Ads campaigns across retail, e-commerce, and high-ticket event sectors (including Levendos, Glorenza, Ashmac, and Bridal Expo).</li>
+                        <li>Pioneered WhatsApp click-to-chat conversion funnels generating over 15,000 verified leads at an industry-leading cost of &#8377;3.24 &ndash; &#8377;4.97 per conversation.</li>
+                        <li>Formulated scalable audience architectures using Meta CBO/ABO, lookalikes, custom retargeting pools, and excluded buyer lists.</li>
+                        <li>Structured technical SEO roadmaps: semantic keyword mapping, canonical governance, meta schemas, and site latency improvements.</li>
+                        <li>Coordinated video production and short-form reels, consistently reaching tens of thousands of organic and paid engagements at &#8377;0.01 per engagement.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Role 02: Arca Noe Consultants -->
+            <div class="grid grid-cols-12 gap-4 items-start">
+              <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
+                02
+              </div>
+              <div class="col-span-10 sm:col-span-11">
+                <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-2">
+                  <div class="card-header-inner flex items-center justify-between gap-4">
+                    <div class="min-w-0">
+                      <span class="font-mono text-xs text-ink-dim block mb-1">Feb 2025 &ndash; May 2025</span>
+                      <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
+                        Arca Noe Consultants &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Executive</span>
+                      </h3>
+                    </div>
+                    <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
+                      <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                      <span class="bar-2 absolute h-full w-px bg-amber"></span>
+                    </div>
+                  </div>
+
+                  <div id="work-detail-2" class="card-detail-panel" role="region">
+                    <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
+                      <p class="font-mono text-xs text-ink">Kochi, Kerala</p>
+                      <ul class="space-y-1.5 list-disc list-inside">
+                        <li>Orchestrated full-funnel student recruitment campaigns across international study destinations (UK, European MBBS, Canadian nursing programs).</li>
+                        <li>Executed high-trust parent-and-student WhatsApp lead funnels for MBBS aspirants, achieving qualified student admissions inquiries at &#8377;39.52 per lead.</li>
+                        <li>Engineered cultural and vernacular creative campaigns (such as the viral Mohanlal UK travel meme and Plus Two results hooks), reducing creative fatigue and boosting social reach.</li>
+                        <li>Boosted high-performing counseling reels generating over 12,800+ post engagements at &#8377;0.04 per engagement.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Role 03: Dotcom Creativez -->
+            <div class="grid grid-cols-12 gap-4 items-start">
+              <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
+                03
+              </div>
+              <div class="col-span-10 sm:col-span-11">
+                <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-3">
+                  <div class="card-header-inner flex items-center justify-between gap-4">
+                    <div class="min-w-0">
+                      <span class="font-mono text-xs text-ink-dim block mb-1">Jun 2024 &ndash; Dec 2024</span>
+                      <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
+                        Dotcom Creativez &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Intern</span>
+                      </h3>
+                    </div>
+                    <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
+                      <span class="bar-1 absolute w-full h-px bg-amber"></span>
+                      <span class="bar-2 absolute h-full w-px bg-amber"></span>
+                    </div>
+                  </div>
+
+                  <div id="work-detail-3" class="card-detail-panel" role="region">
+                    <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
+                      <p class="font-mono text-xs text-ink">Thrissur, Kerala</p>
+                      <ul class="space-y-1.5 list-disc list-inside">
+                        <li>Assisted senior strategists on client multi-channel campaigns, demographic targeting models, and search keyword taxonomy.</li>
+                        <li>Collaborated on graphic design deliverables and B2B corporate branding (including the Quadrill Demolition identity guidelines).</li>
+                        <li>Compiled weekly analytics reporting, tracking CTR, CPL, bounce rate, and landing page conversion bottlenecks.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ------------------------------------------------------------- -->
+        <!-- SUB-SECTION 3B: VERIFIED CAMPAIGN PROOF & CREATIVE GALLERY    -->
+        <!-- ------------------------------------------------------------- -->
+        <div>
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+            <div>
+              <span class="font-mono text-xs text-amber uppercase tracking-[0.16em] font-bold block mb-1">
+                // Campaign Archive &amp; Proof Vault
+              </span>
+              <p class="font-serif italic text-xl text-ink">
+                Actual Meta Ads Manager dashboards, verified metrics &amp; creative executions.
+              </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs" role="tablist" aria-label="Campaign Filter">
+              <button type="button" class="filter-btn active px-3 py-1.5 rounded-lg border border-rule bg-bg-surface text-ink transition-colors" data-filter="all">
+                All Works (13)
+              </button>
+              <button type="button" class="filter-btn px-3 py-1.5 rounded-lg border border-rule bg-bg-surface text-ink-dim hover:text-ink transition-colors" data-filter="meta-ads">
+                Meta Ads &amp; Funnels (6)
+              </button>
+              <button type="button" class="filter-btn px-3 py-1.5 rounded-lg border border-rule bg-bg-surface text-ink-dim hover:text-ink transition-colors" data-filter="creative">
+                Creative &amp; Posters (6)
+              </button>
+              <button type="button" class="filter-btn px-3 py-1.5 rounded-lg border border-rule bg-bg-surface text-ink-dim hover:text-ink transition-colors" data-filter="branding">
+                Brand Identity (1)
               </button>
             </div>
           </div>
 
-          <!-- Role 02: Arca Noe Consultants -->
-          <div class="grid grid-cols-12 gap-4 items-start">
-            <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
-              02
-            </div>
-            <div class="col-span-10 sm:col-span-11">
-              <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-2">
-                <div class="card-header-inner flex items-center justify-between gap-4">
-                  <div class="min-w-0">
-                    <span class="font-mono text-xs text-ink-dim block mb-1">Feb 2025 &ndash; May 2025</span>
-                    <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
-                      Arca Noe Consultants &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Executive</span>
-                    </h3>
-                  </div>
-                  <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
-                    <span class="bar-1 absolute w-full h-px bg-amber"></span>
-                    <span class="bar-2 absolute h-full w-px bg-amber"></span>
+          <!-- Proof Gallery Grid (All 13 Verified Items) -->
+          <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 01: Levendos Scale -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">META ADS &bull; E-COM</span>
+                  <span class="text-rose font-bold">&#8377;4.81 / CPL</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(0)">
+                  <img src="assets/work/levendos-meta-ads-scale.jpg" alt="Levendos Meta Ads Manager Scaling Proof" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
                   </div>
                 </div>
 
-                <div id="work-detail-2" class="card-detail-panel" role="region">
-                  <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
-                    <p class="font-mono text-xs text-ink">Kochi, Kerala</p>
-                    <ul class="space-y-1.5 list-disc list-inside">
-                      <li>Orchestrated study-abroad marketing campaigns targeted at international education aspirants.</li>
-                      <li>Formulated specialised social media funnels generating high-intent Facebook/Instagram student inquiries.</li>
-                      <li>Led brand messaging initiatives and coordinated lead workflows with academic counselling teams.</li>
-                    </ul>
-                  </div>
-                </div>
-              </button>
-            </div>
-          </div>
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Levendos &mdash; E-Commerce WhatsApp Scaling</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Scaled high-volume direct-to-WhatsApp messaging ads for Kerala fashion e-commerce. Handled over 15,000 cumulative conversations with &#8377;20,000+ budget allocation.
+                </p>
+              </div>
 
-          <!-- Role 03: Dotcom Creativez -->
-          <div class="grid grid-cols-12 gap-4 items-start">
-            <div class="col-span-2 sm:col-span-1 pt-3 font-mono font-bold text-2xl sm:text-3xl text-ink-dim/40 select-none">
-              03
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>4,233+</strong> Convos &bull; 664K Impr</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(0)">Details &nearr;</button>
+              </div>
             </div>
-            <div class="col-span-10 sm:col-span-11">
-              <button type="button" class="reveal-card min-h-[96px] w-full text-left p-5 sm:p-6 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="work-detail-3">
-                <div class="card-header-inner flex items-center justify-between gap-4">
-                  <div class="min-w-0">
-                    <span class="font-mono text-xs text-ink-dim block mb-1">Jun 2024 &ndash; Dec 2024</span>
-                    <h3 class="card-title font-display font-medium text-lg sm:text-xl text-ink truncate">
-                      Dotcom Creativez &bull; <span class="text-ink-dim text-sm sm:text-base">Digital Marketing Intern</span>
-                    </h3>
-                  </div>
-                  <div class="card-plus-icon relative w-4 h-4 flex items-center justify-center shrink-0" aria-hidden="true">
-                    <span class="bar-1 absolute w-full h-px bg-amber"></span>
-                    <span class="bar-2 absolute h-full w-px bg-amber"></span>
+
+            <!-- Card 02: Levendos 150 Campaigns -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">WHATSAPP FUNNEL</span>
+                  <span class="text-rose font-bold">&#8377;3.24 &ndash; &#8377;3.48 CPL</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(1)">
+                  <img src="assets/work/levendos-meta-ads-whatsapp.png" alt="Levendos 150 campaigns WhatsApp leads proof" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
                   </div>
                 </div>
 
-                <div id="work-detail-3" class="card-detail-panel" role="region">
-                  <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
-                    <p class="font-mono text-xs text-ink">Thrissur, Kerala</p>
-                    <ul class="space-y-1.5 list-disc list-inside">
-                      <li>Assisted client social media campaigns, SEO keyword mapping, and Google Ads execution.</li>
-                      <li>Generated client ad creative concepts and audience demographic targeting models.</li>
-                    </ul>
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Levendos &mdash; 150+ Ad Set Optimization</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Systematic iterative testing across 150+ campaign sets. Compressed WhatsApp lead acquisition cost to just &#8377;3.24 per customer conversation.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>1,716</strong> Leads / Single Camp</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(1)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 03: Arca Noe MBBS Leads -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">STUDY ABROAD &bull; HIGH-TICKET</span>
+                  <span class="text-rose font-bold">&#8377;39.52 CPL</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(2)">
+                  <img src="assets/work/arcanoe-meta-ads-mbbs.jpg" alt="Arca Noe MBBS student and parent leads dashboard" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
                   </div>
                 </div>
-              </button>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Arca Noe &mdash; Overseas MBBS Lead Pipeline</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Targeted parents and medical aspirants across Kerala. Generated qualified MBBS WhatsApp inquiries at &#8377;39.52 (industry benchmark: &#8377;300&ndash;&#8377;500+).
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>&#8377;0.04</strong> Reel Engagements</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(2)">Details &nearr;</button>
+              </div>
             </div>
+
+            <!-- Card 04: Glorenza 640K Reach -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">AWARENESS &bull; TRAFFIC</span>
+                  <span class="text-amber font-bold">640K+ Reach</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(3)">
+                  <img src="assets/work/glorenza-ecommerce-reach.jpg" alt="Glorenza Meta Ads reach and profile visits" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Glorenza &mdash; 640,000+ Reach &amp; Profile Visits</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Scaled regional reach campaigns at &#8377;3.08 &ndash; &#8377;7.90 CPM while generating 1,824 high-intent Instagram profile visits at &#8377;0.52 per visit.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>1,824 Visits</strong> @ &#8377;0.52</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(3)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 05: Viral Reels 0.01 -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="creative">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-rose border border-rule font-bold">VIRAL DISTRIBUTION</span>
+                  <span class="text-rose font-bold">&#8377;0.01 / CPE</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(4)">
+                  <img src="assets/work/viral-reels-engagement-001.jpg" alt="Viral social engagement proof at 0.01" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Viral Social Engine &mdash; &#8377;0.01 Engagement</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Engineered short-form reel retention hooks paired with precision micro-budgeting to generate over 39,000+ social actions at &#8377;0.01 per engagement.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>23,768 &amp; 16,029</strong> Engagements</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(4)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 06: Ashmac Inbound -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">REGIONAL TRAFFIC</span>
+                  <span class="text-amber font-bold">&#8377;2.22 CPM</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(5)">
+                  <img src="assets/work/ashmac-traffic-profile-reach.png" alt="Ashmac brand reach and WhatsApp inquiries" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Ashmac &mdash; Full-Funnel Growth Architecture</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Multi-tier campaign connecting brand awareness (78,744 reach @ &#8377;2.22 CPM) with Instagram profile visits (&#8377;0.51) and WhatsApp leads (&#8377;12.81).
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>78,744</strong> Reach &bull; &#8377;12.81 Lead</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(5)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 07: Bridal Expo High-Ticket -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">EVENT LEAD GEN</span>
+                  <span class="text-rose font-bold">High-Ticket</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(6)">
+                  <img src="assets/work/bridal-expo-leads.jpg" alt="Bridal Expo WhatsApp messaging inquiries" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Bridal Expo &mdash; High-Ticket Wedding Leads</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Targeted affluent wedding planners and families across Central Kerala with cinematic reels and RSVP WhatsApp inquiries.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>80</strong> Direct Inquiries &bull; 24K Impr</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(6)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 08: FRK Academy -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="meta-ads">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">EDTECH ADMISSIONS</span>
+                  <span class="text-rose font-bold">&#8377;7.06 &ndash; &#8377;8.20 CPL</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(7)">
+                  <img src="assets/work/frk-academy-lead-gen.jpg" alt="FRK Agency video editing course lead gen" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">FRK Academy &mdash; Course Admissions Pipeline</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Student-centric creative angles driving 490 qualified video editing course inquiries under &#8377;8.50 per verified lead.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span><strong>490</strong> Student Inquiries</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(7)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 09: Arca Noe Mohanlal Meme Creative -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="creative">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-rose border border-rule font-bold">VIRAL MEME MARKETING</span>
+                  <span class="text-amber font-bold">UK ADMISSIONS</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(8)">
+                  <img src="assets/work/creative-arcanoe-mohanlal-uk.jpg" alt="Arca Noe Mohanlal UK flight creative" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Arca Noe &mdash; Mohanlal UK Flight Meme</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Leveraged iconic Malayalam cinema imagery (&ldquo;പഠനം ഇനിയും തുടരും ARCA NOE യ്ക്കൊപ്പം...&rdquo;) to make UK study-abroad counseling instantly relatable and viral.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span>Regional Pop Culture Marketing</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(8)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 10: Arca Noe Plus Two Regional Creative -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="creative">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-rose border border-rule font-bold">VERNACULAR COPYWRITING</span>
+                  <span class="text-rose font-bold">ADMISSIONS OPEN</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(9)">
+                  <img src="assets/work/creative-arcanoe-plus-two.jpg" alt="Arca Noe Plus Two Malayalam admissions ad" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Arca Noe &mdash; &ldquo;Plus Two Over? Ready to Fly!&rdquo;</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  High-converting regional Malayalam headline (&ldquo;പ്ലസ് ടു കഴിഞ്ഞില്ലേ..? പറക്കാൻ റെഡി ആയിക്കോ&rdquo;) targeting higher-secondary students immediately following board results.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span>High-Intent Intake Funnel</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(9)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 11: Arca Noe Sunita Williams Poster -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="creative">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">EDITORIAL POSTER</span>
+                  <span class="text-ink-dim">ASPIRATIONAL</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(10)">
+                  <img src="assets/work/creative-arcanoe-sunita-williams.jpg" alt="Arca Noe Sunita Williams Dare to Explore" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Arca Noe &mdash; &ldquo;Dare to Explore&rdquo; Series</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Editorial-grade typography celebrating astronaut Sunita Williams (&ldquo;The universe belongs to those who dare to Explore!&rdquo;), establishing Arca Noe's brand authority.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span>Global Brand Positioning</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(10)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 12: Arca Noe Nurses Day Creative -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="creative">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-amber border border-rule font-bold">HEALTHCARE ADMISSIONS</span>
+                  <span class="text-rose font-bold">TOPICAL CAMPAIGN</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(11)">
+                  <img src="assets/work/creative-arcanoe-nurses-day.jpg" alt="Arca Noe Happy Nurses Day Creative" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Arca Noe &mdash; &ldquo;Global Horizons&rdquo; Nurses Day</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Targeted nursing graduates across Kerala on International Nurses Day (&ldquo;Caring hands deserve global horizons&rdquo;), driving inquiries for UK/Germany nursing pathways.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <span>Healthcare Recruitment</span>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(11)">Details &nearr;</button>
+              </div>
+            </div>
+
+            <!-- Card 13: Quadrill Demolition Brand Identity -->
+            <div class="gallery-card rounded-xl border border-rule bg-bg-surface p-5 flex flex-col justify-between transition-all duration-200 hover:border-amber/60" data-category="branding">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-mono mb-3">
+                  <span class="px-2 py-0.5 rounded bg-bg-elevated text-ink-dim border border-rule font-bold">B2B BRANDING</span>
+                  <span class="text-amber font-bold">VECTOR SYSTEM</span>
+                </div>
+
+                <div class="gallery-img-wrap aspect-[16/10] rounded-lg border border-rule bg-bg-base mb-4 cursor-pointer" onclick="openLightbox(12)">
+                  <img src="assets/work/brand-quadrill-demolition.jpg" alt="Quadrill Demolition B2B logo design" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-bg-base/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="px-3 py-1 rounded bg-amber text-ink-inverse font-mono font-bold text-xs uppercase shadow-xl">Zoom &amp; Inspect</span>
+                  </div>
+                </div>
+
+                <h3 class="font-display font-medium text-lg text-ink mb-1">Quadrill Demolition &mdash; B2B Identity</h3>
+                <p class="text-xs text-ink-dim mb-3 leading-relaxed">
+                  Comprehensive corporate identity and vector mark engineered for heavy commercial demolition operations, machinery decals, and corporate tenders.
+                </p>
+              </div>
+
+              <div class="pt-3 border-t border-rule font-mono text-[11px] flex justify-between items-center text-ink-dim">
+                <a href="assets/work/brand-quadrill-identity.pdf" target="_blank" class="text-ink hover:text-amber underline">Guidelines (PDF) &darr;</a>
+                <button type="button" class="text-amber font-bold hover:underline" onclick="openLightbox(12)">Details &nearr;</button>
+              </div>
+            </div>
+
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ================================================================= -->
-    <!-- 04. SKILLS CHAPTER (2x2 Reveal Cards)                            -->
+    <!-- 04. SKILLS & COMPETENCIES CHAPTER                                 -->
     <!-- ================================================================= -->
     <section id="skills" class="chapter-section py-20 border-b border-rule relative">
       <div class="max-w-6xl mx-auto px-6">
@@ -848,12 +1376,12 @@
             <div class="lg:col-span-6">
               <span class="chapter-num font-mono text-[11px] text-ink-dim tracking-[0.14em] uppercase block mb-2"></span>
               <h2 class="font-display font-medium text-2xl sm:text-4xl text-ink leading-tight max-w-[20ch]">
-                Technical arsenals &amp; campaign proficiencies.
+                Executive arsenals &amp; campaign proficiencies.
               </h2>
             </div>
             <div class="lg:col-span-6 lg:text-right">
               <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
-                CHAPTER 04 &mdash; COMPETENCIES
+                CHAPTER 04 &mdash; EXECUTIVE COMPETENCIES
               </p>
             </div>
           </div>
@@ -862,12 +1390,12 @@
 
         <div class="reveal-group grid grid-cols-1 md:grid-cols-2 gap-4">
           
-          <!-- Category 1: Paid Ads -->
+          <!-- Category 1: Paid Advertising Architecture -->
           <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-1">
             <div class="card-header-inner flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Paid Advertising</h3>
-                <span class="font-mono text-[10px] text-amber uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">05</span>
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Paid Advertising &amp; Funnel Scaling</h3>
+                <span class="font-mono text-[10px] text-amber uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">06</span>
               </div>
               <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
                 <span class="bar-1 absolute w-full h-px bg-amber"></span>
@@ -876,21 +1404,22 @@
             </div>
             <div id="skill-panel-1" class="card-detail-panel" role="region">
               <div class="pt-4 mt-4 border-t border-rule flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Meta Ads (FB &amp; IG)</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Google Ads</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Campaign Optimisation</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Audience Targeting</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Bidding Strategies</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Meta Ads (CBO &amp; ABO Scaling)</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">WhatsApp Click-to-Chat Funnels</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Google Search &amp; Display Ads</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Lookalike &amp; Custom Audience Mapping</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">CPL &amp; CPM Compression Tactics</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Dynamic Creative Optimization (DCO)</span>
               </div>
             </div>
           </button>
 
-          <!-- Category 2: Search & Analytics -->
+          <!-- Category 2: Technical SEO & Analytics -->
           <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-2">
             <div class="card-header-inner flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Search &amp; Analytics</h3>
-                <span class="font-mono text-[10px] text-rose uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">05</span>
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Technical SEO &amp; Data Analytics</h3>
+                <span class="font-mono text-[10px] text-rose uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">06</span>
               </div>
               <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
                 <span class="bar-1 absolute w-full h-px bg-amber"></span>
@@ -899,21 +1428,22 @@
             </div>
             <div id="skill-panel-2" class="card-detail-panel" role="region">
               <div class="pt-4 mt-4 border-t border-rule flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Technical SEO</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">On-Page Optimisation</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Keyword Research</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Search Visibility</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-rose hover:text-ink transition-colors">Performance Diagnostics</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Technical Site Crawl Audits</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Google Analytics 4 (GA4)</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Google Tag Manager &amp; Custom Events</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Meta Pixel &amp; Server-Side CAPI</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">DNS, Latency &amp; Server Infrastructure</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Core Web Vitals Optimization</span>
               </div>
             </div>
           </button>
 
-          <!-- Category 3: Content & Strategy -->
+          <!-- Category 3: Creative Direction & Psychology -->
           <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-3">
             <div class="card-header-inner flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Content &amp; Strategy</h3>
-                <span class="font-mono text-[10px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">05</span>
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Creative Direction &amp; Psychology</h3>
+                <span class="font-mono text-[10px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">06</span>
               </div>
               <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
                 <span class="bar-1 absolute w-full h-px bg-amber"></span>
@@ -922,20 +1452,21 @@
             </div>
             <div id="skill-panel-3" class="card-detail-panel" role="region">
               <div class="pt-4 mt-4 border-t border-rule flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Social Media Management</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Content Calendars</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Brand Identity</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Creative Coordination</span>
-                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink hover:border-amber hover:text-ink transition-colors">Conversion Funnels</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Malayalam &amp; English Copywriting</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Cultural Meme &amp; Viral Hook Strategy</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Consumer Heuristics &amp; Choice Architecture</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Short-Form Video &amp; Reels Production</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">B2B Corporate Identity &amp; Vector Branding</span>
+                <span class="px-2.5 py-1 rounded bg-bg-elevated border border-rule font-mono text-xs text-ink">Conversion Rate Optimization (CRO)</span>
               </div>
             </div>
           </button>
 
-          <!-- Category 4: Languages Known -->
+          <!-- Category 4: Languages & Communication -->
           <button type="button" class="reveal-card min-h-[72px] text-left p-5 rounded-xl border border-rule bg-bg-surface hover:border-amber/50 focus:border-amber group" aria-expanded="false" aria-controls="skill-panel-4">
             <div class="card-header-inner flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Languages Known</h3>
+                <h3 class="card-title font-display font-medium text-base sm:text-lg text-ink">Languages &amp; Market Reach</h3>
                 <span class="font-mono text-[10px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">04</span>
               </div>
               <div class="card-plus-icon relative w-3.5 h-3.5 flex items-center justify-center shrink-0" aria-hidden="true">
@@ -966,7 +1497,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 05. EDUCATION CHAPTER (clip-path circle reveal)                   -->
+    <!-- 05. EDUCATION & FOUNDATIONS CHAPTER                               -->
     <!-- ================================================================= -->
     <section id="education" class="chapter-section py-20 border-b border-rule relative">
       <div class="max-w-6xl mx-auto px-6">
@@ -981,7 +1512,7 @@
             </div>
             <div class="lg:col-span-6 lg:text-right">
               <p class="font-mono text-xs text-ink-dim uppercase tracking-[0.12em]">
-                CHAPTER 05 &mdash; FOUNDATIONS
+                CHAPTER 05 &mdash; FOUNDATIONS &amp; DEGREES
               </p>
             </div>
           </div>
@@ -1024,7 +1555,7 @@
                 <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest block mb-1">2023 &bull; CCNA</span>
                 <h4 class="font-display font-medium text-sm text-ink mb-2">Skill Haara, Thrissur</h4>
                 <p class="text-xs text-ink-dim leading-relaxed">
-                  Server protocols, DNS architectures, and latency diagnostics aiding technical search engine crawlability.
+                  Server protocols, DNS architectures, latency diagnostics, and technical search engine crawlability.
                 </p>
               </div>
             </div>
@@ -1058,7 +1589,7 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- 06. CONTACT CHAPTER (03. Single-Space Placeholder Fields)         -->
+    <!-- 06. CONTACT CHAPTER                                               -->
     <!-- ================================================================= -->
     <section id="contact" class="chapter-section py-20 relative">
       <div class="max-w-6xl mx-auto px-6">
@@ -1082,12 +1613,12 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          <!-- Left: 4 Direct Contact Cards (Semantic <a>) -->
+          <!-- Left: Direct Contact Cards -->
           <div class="lg:col-span-5 space-y-3 font-mono text-xs">
             
             <a href="mailto:gokultvibin.work@gmail.com" class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between group hover:border-amber active:scale-[0.97] transition-all">
               <div>
-                <span class="text-[10px] text-ink-dim uppercase block">EMAIL</span>
+                <span class="text-[10px] text-ink-dim uppercase block">PRIMARY EMAIL</span>
                 <span class="text-sm font-bold text-ink group-hover:text-amber transition-colors">gokultvibin.work@gmail.com</span>
               </div>
               <span class="text-ink-dim group-hover:text-amber text-base transition-colors">&nearr;</span>
@@ -1095,7 +1626,7 @@
 
             <a href="tel:+919048646762" class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between group hover:border-amber active:scale-[0.97] transition-all">
               <div>
-                <span class="text-[10px] text-ink-dim uppercase block">PHONE &middot; WHATSAPP</span>
+                <span class="text-[10px] text-ink-dim uppercase block">DIRECT PHONE &middot; WHATSAPP</span>
                 <span class="text-sm font-bold text-ink group-hover:text-amber transition-colors">+91 9048646762</span>
               </div>
               <span class="text-ink-dim group-hover:text-amber text-base transition-colors">&nearr;</span>
@@ -1103,23 +1634,31 @@
 
             <div class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between">
               <div>
-                <span class="text-[10px] text-ink-dim uppercase block">LOCATION</span>
-                <span class="text-sm font-bold text-ink">Kochi, Kerala, India</span>
+                <span class="text-[10px] text-ink-dim uppercase block">BASE LOCATION</span>
+                <span class="text-sm font-bold text-ink">Kochi &middot; Thrissur, Kerala, India</span>
               </div>
-              <span class="text-rose text-xs font-bold">&bull; Active</span>
+              <span class="text-rose text-xs font-bold">&bull; Active &amp; Ready</span>
             </div>
 
             <a href="https://www.linkedin.com/in/gokultvibin" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between group hover:border-amber active:scale-[0.97] transition-all">
               <div>
-                <span class="text-[10px] text-ink-dim uppercase block">LINKEDIN</span>
+                <span class="text-[10px] text-ink-dim uppercase block">LINKEDIN PROFILE</span>
                 <span class="text-sm font-bold text-ink group-hover:text-amber transition-colors">linkedin.com/in/gokultvibin</span>
               </div>
               <span class="text-ink-dim group-hover:text-amber text-base transition-colors">&nearr;</span>
             </a>
 
+            <div class="p-4 rounded-xl border border-rule bg-bg-surface flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-ink-dim uppercase block">EXECUTIVE CV</span>
+                <span class="text-sm font-bold text-ink">Gokul-TVibin-Resume.pdf</span>
+              </div>
+              <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="text-amber font-bold hover:underline">Download &darr;</a>
+            </div>
+
           </div>
 
-          <!-- Right: Kinetic Label Form (placeholder=" " for bug-free CSS floating) -->
+          <!-- Right: Kinetic Label Form -->
           <div class="lg:col-span-7">
             <div class="p-6 sm:p-8 rounded-xl border border-rule bg-bg-surface">
               <form id="contact-form" action="#" method="POST" novalidate class="space-y-4">
@@ -1167,7 +1706,7 @@
                     class="w-full px-4 pt-5 pb-2 rounded-lg border border-rule bg-bg-elevated text-ink text-sm focus:border-amber transition-colors"
                     aria-describedby="sub-desc"
                   >
-                  <label for="form-subject">Subject *</label>
+                  <label for="form-subject">Subject / Project Scope *</label>
                   <span id="sub-desc" class="sr-only">Enter message subject</span>
                 </div>
 
@@ -1182,18 +1721,18 @@
                     class="w-full px-4 pt-5 pb-2 rounded-lg border border-rule bg-bg-elevated text-ink text-sm focus:border-amber transition-colors resize-y"
                     aria-describedby="msg-desc"
                   ></textarea>
-                  <label for="form-message">Message Scope *</label>
+                  <label for="form-message">Campaign Details &amp; Objectives *</label>
                   <span id="msg-desc" class="sr-only">Enter your campaign inquiry details</span>
                 </div>
 
-                <!-- 09. Semantic Action: <button type="submit"> -->
+                <!-- Submit Button -->
                 <button type="submit" class="w-full py-3 px-6 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.14em] hover:bg-amber-hi active:scale-[0.98] transition-all">
                   Transmit Inquiry &rarr;
                 </button>
 
                 <div class="pt-1 text-center">
                   <a href="https://wa.me/919048646762?text=Hello%20Gokul,%20reaching%20out%20via%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="font-mono text-[11px] text-ink-dim hover:text-amber transition-colors inline-flex items-center gap-1">
-                    <span>Direct WhatsApp Channel</span>
+                    <span>Direct WhatsApp Channel (+91 9048646762)</span>
                     <span>&rarr;</span>
                   </a>
                 </div>
@@ -1207,6 +1746,62 @@
     </section>
 
   </main>
+
+  <!-- =================================================================== -->
+  <!-- LIGHTBOX / PROOF INSPECTION MODAL                                    -->
+  <!-- =================================================================== -->
+  <div id="image-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-bg-base/95 backdrop-blur-[16px]" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="relative w-full max-w-4xl max-h-[90vh] rounded-2xl border border-rule bg-bg-surface overflow-hidden shadow-2xl flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="p-4 sm:px-6 border-b border-rule flex items-center justify-between bg-bg-elevated/50">
+        <div class="min-w-0 pr-4">
+          <span id="modal-category" class="font-mono text-[10px] text-amber uppercase font-bold tracking-wider block"></span>
+          <h3 id="modal-title" class="font-display font-medium text-base sm:text-xl text-ink truncate"></h3>
+        </div>
+        <button id="modal-close" type="button" class="p-2 rounded-lg bg-bg-surface border border-rule text-ink-dim hover:text-ink hover:border-amber transition-colors focus:outline-none" aria-label="Close inspection window">
+          <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
+        <div class="w-full rounded-xl border border-rule bg-bg-base overflow-hidden flex items-center justify-center min-h-[240px] max-h-[55vh]">
+          <img id="modal-img" src="" alt="Proof Enlargement" class="max-w-full max-h-[55vh] object-contain">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4 rounded-xl bg-bg-elevated/40 border border-rule font-mono text-xs">
+          <div>
+            <span class="text-[10px] text-ink-dim uppercase block">Client / Brand</span>
+            <span id="modal-client" class="text-ink font-bold"></span>
+          </div>
+          <div>
+            <span class="text-[10px] text-ink-dim uppercase block">Key Metric</span>
+            <span id="modal-metric" class="text-rose font-bold"></span>
+          </div>
+          <div>
+            <span class="text-[10px] text-ink-dim uppercase block">Channel</span>
+            <span id="modal-channel" class="text-amber font-bold"></span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-mono text-xs text-ink-dim uppercase tracking-wider mb-1 font-bold">// Executive Strategy &amp; Execution</h4>
+          <p id="modal-desc" class="text-sm text-ink-dim leading-relaxed font-sans"></p>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-3 sm:px-6 border-t border-rule bg-bg-elevated/30 flex justify-between items-center font-mono text-[11px] text-ink-dim">
+        <span>Verified Performance Proof &bull; Kochi, Kerala</span>
+        <button type="button" class="text-amber hover:underline" onclick="closeLightbox()">Close Window [ESC]</button>
+      </div>
+
+    </div>
+  </div>
 
   <!-- =================================================================== -->
   <!-- FOOTER & BACK TO TOP                                                -->
@@ -1231,7 +1826,7 @@
     </div>
   </footer>
 
-  <!-- 09. Semantic Action: <button> for Back to Top -->
+  <!-- Back to Top Button -->
   <button id="back-to-top" hidden type="button" class="fixed bottom-6 right-6 z-40 w-10 h-10 rounded-lg bg-amber text-ink-inverse font-mono font-bold items-center justify-center shadow-2xl hover:bg-amber-hi transition-all" aria-label="Return to top of page">
     &uarr;
   </button>
@@ -1245,15 +1840,21 @@
   </div>
 
   <!-- =================================================================== -->
-  <!-- VANILLA JAVASCRIPT LOGIC (Strictly <= 120 lines, fully debugged)    -->
+  <!-- VANILLA JAVASCRIPT LOGIC                                            -->
   <!-- =================================================================== -->
   <script>
     // 1. Year Update
     document.getElementById('year')?.replaceChildren(new Date().getFullYear());
 
-    // 2. Native Precision Cursor Active
+    // 2. Profile Photo Swap Check (gracefully upgrades SVG avatar if profile.jpg is provided)
+    const portrait = document.getElementById('profile-portrait');
+    if (portrait && portrait.dataset.photo) {
+      const probe = new Image();
+      probe.src = portrait.dataset.photo;
+      probe.onload = () => { portrait.src = portrait.dataset.photo; };
+    }
 
-    // 3. Mobile Menu Toggle (@starting-style + hidden attribute)
+    // 3. Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     function toggleMenu(open) {
@@ -1267,7 +1868,7 @@
     menuBtn?.addEventListener('click', () => toggleMenu(menu?.hasAttribute('hidden') ?? false));
     document.querySelectorAll('.menu-link').forEach(l => l.addEventListener('click', () => toggleMenu(false)));
 
-    // 4. Accordion + 06. Dynamic View Transitions Name Assignment
+    // 4. Accordion Management (Click-only, zero hover jumps)
     const cards = document.querySelectorAll('.reveal-card');
     cards.forEach((card, i) => {
       card.dataset.vtName = 'card-' + i;
@@ -1308,7 +1909,7 @@
     });
 
     document.addEventListener('click', e => {
-      if (!e.target.closest('.reveal-group')) {
+      if (!e.target.closest('.reveal-group') && !e.target.closest('#image-modal')) {
         cards.forEach(c => {
           c.setAttribute('aria-expanded', 'false');
           c.classList.remove('is-open');
@@ -1361,7 +1962,193 @@
       });
     }, { passive: true });
 
-    // 7. Form Submission & Mailto Transmission
+    // 7. Gallery Filter Tabs
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        galleryCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 8. Verified Lightbox Data & Logic (All 13 Uploaded Projects)
+    const proofData = [
+      {
+        title: "Levendos — E-Commerce WhatsApp Scaling",
+        category: "META ADS · E-COMMERCE",
+        client: "Levendos Apparel",
+        metric: "4,233+ Convos @ ₹4.81 / convo",
+        channel: "Meta Ads (Instagram & Facebook)",
+        img: "assets/work/levendos-meta-ads-scale.jpg",
+        desc: "High-volume direct-to-WhatsApp messaging ads designed for Kerala apparel consumers. Deployed ABO and CBO budgets totaling ₹20,354+ across 664,393 impressions to drive qualified customer purchase dialogues. Bypassed online checkout drop-offs and connected prospective buyers immediately to conversational sales reps."
+      },
+      {
+        title: "Levendos — 150+ Ad Set WhatsApp Funnel",
+        category: "WHATSAPP FUNNEL · CPL REDUCTION",
+        client: "Levendos Apparel",
+        metric: "₹3.24 – ₹3.48 CPL (1,716 Leads)",
+        channel: "Meta Ads Manager",
+        img: "assets/work/levendos-meta-ads-whatsapp.png",
+        desc: "Executed and analyzed 150+ granular ad sets to isolate the most cost-effective audience niches and creative angles. Delivered individual campaigns with 1,716, 1,107, and 978 conversations at ₹3.24–₹3.48 each, maintaining an exceptional ₹0.01 post engagement rate."
+      },
+      {
+        title: "Arca Noe — Overseas MBBS Student & Parent Funnel",
+        category: "STUDY ABROAD · HIGH-TICKET LEADS",
+        client: "Arca Noe Consultants Pvt Ltd",
+        metric: "₹39.52 CPL (Parent + Student Leads)",
+        channel: "Meta Ads (WhatsApp Lead Gen)",
+        img: "assets/work/arcanoe-meta-ads-mbbs.jpg",
+        desc: "In an ultra-competitive niche where medical overseas admission leads typically command ₹300–₹500+, engineered high-trust emotional messaging addressing parents' safety and accreditation concerns. Generated verified leads at ₹39.52, while boosting informative medical counseling reels to 12,831 engagements at ₹0.04."
+      },
+      {
+        title: "Glorenza — 640,000+ Reach & Profile Visits",
+        category: "AWARENESS · SOCIAL COMMERCE",
+        client: "Glorenza",
+        metric: "640K+ Reach @ ₹3.08 CPM",
+        channel: "Meta Ads (Instagram Traffic)",
+        img: "assets/work/glorenza-ecommerce-reach.jpg",
+        desc: "Built custom lookalike audiences based on verified purchase histories. Deployed multi-burst awareness campaigns reaching 640,000+ targeted individuals across Kerala at ₹3.08–₹7.90 CPM, while driving 1,824 high-intent Instagram profile visits at ₹0.52 per visitor."
+      },
+      {
+        title: "Viral Social Distribution Engine",
+        category: "VIRAL DISTRIBUTION · SHORT FORM",
+        client: "Blackmetalink & Media Brands",
+        metric: "39,797+ Actions @ ₹0.01 CPE",
+        channel: "Instagram Reels & Meta Boost",
+        img: "assets/work/viral-reels-engagement-001.jpg",
+        desc: "Combines 3-second psychological retention hooks with strategic micro-boosts (₹100 daily budgets). Delivered 23,768 and 16,029 verified engagements at an unprecedented ₹0.01 cost per result."
+      },
+      {
+        title: "Ashmac — Full-Funnel Growth Architecture",
+        category: "REGIONAL TRAFFIC & INBOUND",
+        client: "Ashmac",
+        metric: "78,744 Reach @ ₹2.22 CPM",
+        channel: "Meta Ads Manager",
+        img: "assets/work/ashmac-traffic-profile-reach.png",
+        desc: "Integrated tri-tier advertising structure: Top-of-funnel reach at ₹2.22 per 1,000 people reached, mid-funnel profile traffic at ₹0.51 per visit, and bottom-funnel direct WhatsApp conversion at ₹12.81 per inbound inquiry."
+      },
+      {
+        title: "Bridal Expo — High-Ticket Wedding Leads",
+        category: "EVENT MARKETING · B2C",
+        client: "Bridal Expo Kerala",
+        metric: "80 Qualified Inquiries @ ₹68.10",
+        channel: "Meta Ads (Video Reels)",
+        img: "assets/work/bridal-expo-leads.jpg",
+        desc: "Targeted newly engaged couples and wedding planners with pre-wedding video reels. Drove 80 high-ticket RSVP inquiries directly into event coordinators' WhatsApp inboxes."
+      },
+      {
+        title: "FRK Academy — Course Admissions Pipeline",
+        category: "EDTECH ADMISSIONS · LEAD GEN",
+        client: "FRK Academy",
+        metric: "490 Student Leads @ ₹7.06 – ₹8.20",
+        channel: "Meta Ads",
+        img: "assets/work/frk-academy-lead-gen.jpg",
+        desc: "Student-oriented creative angles focusing on software mastery, portfolio outcomes, and career prospects. Generated 490 admissions leads under ₹8.50 per student."
+      },
+      {
+        title: "Arca Noe — Mohanlal UK Flight Viral Meme Creative",
+        category: "CREATIVE DIRECTION · MALAYALAM HOOKS",
+        client: "Arca Noe Consultants Pvt Ltd",
+        metric: "Topical Cultural Marketing",
+        channel: "Social & Digital Outdoor",
+        img: "assets/work/creative-arcanoe-mohanlal-uk.jpg",
+        desc: "Integrated beloved Kerala cinema pop culture into study-abroad counseling ('പഠനം ഇനിയും തുടരും ARCA NOE യ്ക്കൊപ്പം...'). Tapped into organic nostalgia to overcome audience ad fatigue and ignite social shares."
+      },
+      {
+        title: "Arca Noe — 'Plus Two Over? Ready to Fly!' Campaign",
+        category: "VERNACULAR COPYWRITING · ADMISSIONS",
+        client: "Arca Noe Consultants Pvt Ltd",
+        metric: "High-Intent Board Result Funnel",
+        channel: "Digital Feed 4:5 & Stories",
+        img: "assets/work/creative-arcanoe-plus-two.jpg",
+        desc: "Timely vernacular copy ('പ്ലസ് ടു കഴിഞ്ഞില്ലേ..? പറക്കാൻ റെഡി ആയിക്കോ') timed with state board result announcements, paired with modern suitcase travel iconography to drive immediate student DM inquiries."
+      },
+      {
+        title: "Arca Noe — 'Dare to Explore' Sunita Williams Poster",
+        category: "EDITORIAL POSTER · BRAND AUTHORITY",
+        client: "Arca Noe Consultants Pvt Ltd",
+        metric: "Aspirational Global Horizons",
+        channel: "High-Resolution Display",
+        img: "assets/work/creative-arcanoe-sunita-williams.jpg",
+        desc: "Aspirational editorial layout featuring NASA astronaut Sunita Williams ('The universe belongs to those who dare to Explore!'). Established premium brand distinction in overseas educational consulting."
+      },
+      {
+        title: "Arca Noe — 'Global Horizons' Nurses Day Creative",
+        category: "HEALTHCARE RECRUITMENT · TOPICAL",
+        client: "Arca Noe Consultants Pvt Ltd",
+        metric: "Topical Overseas Healthcare Leads",
+        channel: "Instagram & WhatsApp Status",
+        img: "assets/work/creative-arcanoe-nurses-day.jpg",
+        desc: "Celebrated nursing professionals on International Nurses Day ('Caring hands deserve global horizons'), directing interested healthcare practitioners into fast-track UK and European career pathways."
+      },
+      {
+        title: "Quadrill Demolition — B2B Corporate Identity",
+        category: "BRAND IDENTITY & VECTOR DESIGN",
+        client: "Quadrill Demolition",
+        metric: "Full Industrial Vector Identity",
+        channel: "Vector / Corporate Collateral",
+        img: "assets/work/brand-quadrill-demolition.jpg",
+        desc: "Complete corporate identity engineering for heavy commercial demolition and engineering works. Designed for optimal legibility across industrial vehicle livery, safety hardhats, architectural proposals, and executive stationary."
+      }
+    ];
+
+    const modal = document.getElementById('image-modal');
+    const modalClose = document.getElementById('modal-close');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalCat = document.getElementById('modal-category');
+    const modalClient = document.getElementById('modal-client');
+    const modalMetric = document.getElementById('modal-metric');
+    const modalChannel = document.getElementById('modal-channel');
+    const modalDesc = document.getElementById('modal-desc');
+
+    function openLightbox(index) {
+      const data = proofData[index];
+      if (!data || !modal) return;
+      modalImg.src = data.img;
+      modalImg.alt = data.title;
+      modalTitle.textContent = data.title;
+      modalCat.textContent = data.category;
+      modalClient.textContent = data.client;
+      modalMetric.textContent = data.metric;
+      modalChannel.textContent = data.channel;
+      modalDesc.textContent = data.desc;
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      modalClose?.focus();
+    }
+
+    function closeLightbox() {
+      if (!modal) return;
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    modalClose?.addEventListener('click', closeLightbox);
+    modal?.addEventListener('click', e => {
+      if (e.target === modal) closeLightbox();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        if (modal?.getAttribute('aria-hidden') === 'false') {
+          closeLightbox();
+        }
+      }
+    });
+
+    // 9. Form Submission & Mailto Transmission
     const form = document.getElementById('contact-form');
     const toast = document.getElementById('toast');
     form?.addEventListener('submit', e => {
@@ -1372,7 +2159,7 @@
       const msg = document.getElementById('form-message')?.value.trim();
       if (!name || !email || !sub || !msg) return;
 
-      const mailto = `mailto:gokultvibin.work@gmail.com?subject=${encodeURIComponent('[Inquiry] ' + sub)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + msg)}`;
+      const mailto = `mailto:gokultvibin.work@gmail.com?subject=${encodeURIComponent('[Campaign Inquiry] ' + sub)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + msg)}`;
       window.location.href = mailto;
       if (toast) {
         toast.style.opacity = '1';
@@ -1381,7 +2168,7 @@
       form.reset();
     });
 
-    // 8. Back to Top Button (@starting-style + hidden)
+    // 10. Back to Top Button
     const btt = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
