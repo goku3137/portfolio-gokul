@@ -110,9 +110,12 @@
       contain-intrinsic-size: 1px 700px;
     }
 
-    /* CSS Counters for Editorial Auto-Numbering */
+    /* CSS Counters for Editorial Auto-Numbering & Sticky Header Clearance */
     body { counter-reset: sec 0; }
-    .chapter-section { counter-increment: sec; }
+    .chapter-section {
+      counter-increment: sec;
+      scroll-margin-top: 76px;
+    }
     .chapter-num::before {
       content: counter(sec, decimal-leading-zero) " / 06";
     }
@@ -460,21 +463,22 @@
   <!-- =================================================================== -->
   <!-- NAVIGATION (Semantic anchors, sticky backdrop blur)                 -->
   <!-- =================================================================== -->
-  <header class="sticky top-0 left-0 right-0 z-40 h-[64px] border-b border-rule bg-bg-base/90 backdrop-blur-[12px] flex items-center">
-    <div class="max-w-6xl mx-auto px-6 w-full flex items-center justify-between">
+  <header class="sticky top-0 left-0 right-0 z-40 h-[68px] border-b border-rule bg-bg-base/90 backdrop-blur-[12px] flex items-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full flex items-center justify-between">
       
-      <!-- Brand Link: GOKUL · T · VIBIN with profile thumbnail -->
-      <a href="#hero" class="flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.18em] text-ink hover:text-amber transition-colors focus:outline-none">
-        <img src="assets/profile.jpg" alt="Gokul T Vibin" class="w-6 h-6 rounded-full object-cover border border-amber/70 shadow-sm" onerror="this.src='assets/gokul-avatar.svg'">
-        <span class="font-bold">GOKUL</span>
-        <span class="text-amber">&middot;</span>
-        <span>T</span>
-        <span class="text-amber">&middot;</span>
-        <span>VIBIN</span>
+      <!-- Brand Link: GOKUL T VIBIN with profile avatar -->
+      <a href="#hero" class="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.16em] text-ink hover:text-amber transition-colors focus:outline-none shrink-0 group">
+        <div class="relative w-8 h-8 rounded-full overflow-hidden border border-amber/70 p-0.5 bg-bg-surface shrink-0 shadow-sm group-hover:border-amber transition-colors">
+          <img src="assets/profile.jpg" alt="Gokul T Vibin" class="w-full h-full rounded-full object-cover" onerror="this.src='assets/gokul-avatar.svg'">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-ink tracking-wider text-xs sm:text-sm group-hover:text-amber transition-colors">GOKUL T VIBIN</span>
+          <span class="text-[9px] text-ink-dim tracking-widest hidden sm:inline-block">DIGITAL MARKETING EXEC</span>
+        </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-7 font-mono text-xs uppercase tracking-[0.14em]" aria-label="Primary Navigation">
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 font-mono text-xs uppercase tracking-[0.14em]" aria-label="Primary Navigation">
         <a href="#about" class="vf-link text-ink-dim hover:text-ink relative py-1 group">
           <span>02 / About</span>
           <span class="absolute bottom-0 left-0 w-full h-px bg-amber origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-200" aria-hidden="true"></span>
@@ -498,29 +502,31 @@
       </nav>
 
       <!-- Right Action: Resume & CTA -->
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="font-mono text-xs text-ink-dim hover:text-amber tracking-[0.12em] uppercase transition-colors px-2 py-1">
-          CV &darr;
+      <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
+        <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="hidden sm:inline-flex items-center gap-1.5 font-mono text-xs text-ink-dim hover:text-amber tracking-[0.12em] uppercase transition-colors px-3 py-1.5 rounded-lg border border-rule hover:border-amber/50 bg-bg-surface">
+          <svg class="w-3.5 h-3.5 stroke-current text-amber" fill="none" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+          </svg>
+          <span>CV (PDF)</span>
         </a>
-        <a href="#contact" class="px-4 py-2 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.12em] hover:bg-amber-hi transition-all">
+        <a href="#contact" class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.12em] hover:bg-amber-hi transition-all shadow-md shadow-amber/20">
           Initiate Contact
         </a>
+        <!-- Mobile Hamburger Button -->
+        <button id="menu-btn" type="button" class="lg:hidden p-2 rounded-lg border border-rule bg-bg-surface text-ink-dim hover:text-ink hover:border-amber transition-colors focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <line x1="3" y1="7" x2="21" y2="7"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="17" x2="21" y2="17"></line>
+          </svg>
+        </button>
       </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button id="menu-btn" type="button" class="md:hidden p-2 text-ink-dim hover:text-ink focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="1.8">
-          <line x1="3" y1="7" x2="21" y2="7"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="17" x2="21" y2="17"></line>
-        </svg>
-      </button>
 
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" hidden class="mobile-menu fixed inset-0 top-[64px] bg-bg-base z-30 flex flex-col justify-between p-8 border-b border-rule">
-      <nav class="flex flex-col space-y-5 font-mono text-base uppercase tracking-[0.15em] pt-4">
+    <div id="mobile-menu" hidden class="mobile-menu fixed inset-0 top-[68px] bg-bg-base/98 backdrop-blur-xl z-30 flex flex-col justify-between p-6 sm:p-8 border-b border-rule">
+      <nav class="flex flex-col space-y-4 font-mono text-base uppercase tracking-[0.15em] pt-4">
         <a href="#about" class="menu-link py-2 border-b border-rule hover:text-amber transition-colors flex justify-between">
           <span>02 &bull; About Gokul</span>
           <span class="text-ink-dim">&rarr;</span>
@@ -543,8 +549,11 @@
         </a>
       </nav>
       <div class="pt-6 font-mono text-xs text-ink-dim flex flex-col gap-3">
-        <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="py-3 px-4 rounded bg-bg-surface border border-rule text-center text-ink font-bold">
-          Download Resume (PDF)
+        <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="py-3 px-4 rounded bg-bg-surface border border-rule text-center text-ink font-bold flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 stroke-current text-amber" fill="none" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+          </svg>
+          <span>Download Executive CV (PDF)</span>
         </a>
         <span class="text-center text-[11px]">Kochi, Kerala &bull; gokultvibin.work@gmail.com</span>
       </div>
@@ -559,12 +568,12 @@
     <!-- ================================================================= -->
     <!-- 01. HERO CHAPTER                                                  -->
     <!-- ================================================================= -->
-    <section id="hero" class="chapter-section min-h-[92svh] flex flex-col justify-between pt-12 pb-8 border-b border-rule relative overflow-hidden">
+    <section id="hero" class="chapter-section min-h-[calc(100svh-68px)] flex flex-col justify-between border-b border-rule relative overflow-hidden">
       
       <!-- Warm Amber Ambient Glow -->
       <div class="absolute right-0 top-1/4 w-[560px] h-[560px] bg-[radial-gradient(ellipse_at_70%_40%,rgba(245,158,11,0.12),transparent_65%)] blur-[90px] pointer-events-none -z-10" aria-hidden="true"></div>
 
-      <div class="max-w-6xl mx-auto px-6 w-full flex-1 flex flex-col justify-center py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full flex-1 flex flex-col justify-center py-8 sm:py-12">
         
         <!-- Eyebrow: Executive Status Pill with Real Portrait -->
         <div class="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full bg-bg-surface border border-rule mb-6 shadow-sm w-fit">
