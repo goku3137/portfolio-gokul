@@ -9,13 +9,45 @@
 
 ```
 gokul-dm/
-├── index.html                   # Single-file production portfolio (~72 KB)
+├── index.html                   # Single-file production portfolio with 27 verified proofs
 ├── robots.txt                   # Search crawler directives
 ├── sitemap.xml                  # Canonical XML sitemap for SEO
+├── vercel.json                  # Vercel deployment & security headers
 ├── README.md                    # Complete technical and deployment guide
 └── assets/
+    ├── profile.jpg              # High-resolution candidate portrait photo
+    ├── gokul-avatar.svg         # Bespoke monogram executive fallback avatar
     ├── Gokul-TVibin-Resume.pdf  # Valid, self-contained candidate resume
-    └── og-image.svg             # 1200x630 OpenGraph social share card
+    ├── og-image.svg             # 1200x630 OpenGraph social share card
+    └── work/                    # 27 verified campaign assets & proof vault
+        ├── levendos-meta-ads-scale.jpg          # Active WhatsApp scaling (4,233+ convos @ ₹4.81)
+        ├── levendos-meta-ads-whatsapp.png        # 150+ ad sets (1,716 leads @ ₹3.24)
+        ├── arcanoe-meta-ads-mbbs.jpg            # MBBS overseas parent pipeline (₹39.52 CPL)
+        ├── glorenza-ecommerce-reach.jpg         # 640K+ reach & profile visits (@ ₹0.52)
+        ├── ashmac-traffic-profile-reach.png     # Full-funnel regional growth (₹2.22 CPM)
+        ├── bridal-expo-leads.jpg                # High-ticket wedding inquiries (80 convos)
+        ├── frk-academy-lead-gen.jpg             # EdTech admissions pipeline (490 leads)
+        ├── solar-panel-workforce-leadgen.jpg     # Solar electrician recruitment (₹1500–₹2000/day)
+        ├── dua-weddings-1lakh-package.jpg       # Dua Weddings ₹1,00,000 Bride & Groom package
+        ├── dua-weddings-hindu-package.jpg       # Dua Weddings Hindu package (₹74,000 + Helicam)
+        ├── dua-weddings-muslim-package.jpg      # Dua Weddings Muslim Nikah package (₹74,000)
+        ├── spoton-nursing-georgia.jpg           # SpotOn Study Nursing in Georgia admissions
+        ├── echowave-meme-leads-diet.jpg         # Echowave "Diet Cancel" viral agency meme
+        ├── echowave-vishu-krishna-laptop.jpg    # Echowave "Happy Vishu" Lord Krishna laptop concept
+        ├── echowave-eid-mouse-minaret.jpg       # Echowave "Eid Mubarak" stylus-minaret shadow
+        ├── creative-arcanoe-mohanlal-uk.jpg     # Arca Noe Mohanlal UK flight viral cultural meme
+        ├── creative-arcanoe-plus-two.jpg        # Arca Noe Plus Two regional admissions campaign
+        ├── creative-arcanoe-sunita-williams.jpg # Arca Noe "Dare to Explore" Sunita Williams poster
+        ├── creative-arcanoe-nurses-day.jpg      # Arca Noe "Global Horizons" Nurses Day creative
+        ├── viral-reels-engagement-001.jpg       # Viral social engine (39,000+ actions @ ₹0.01)
+        ├── echowave-brand-hands-identity.jpg     # Echowave "Who Else but Echowave" brand identity
+        ├── echowave-bakrid-typography.jpg       # Echowave Bakrid handcrafted Malayalam lettering
+        ├── laark-fitness-grand-opening.jpg      # Laark Fitness Chenthrappinni gym grand opening
+        ├── brand-quadrill-demolition.jpg        # Quadrill Demolition B2B vector identity
+        ├── brand-quadrill-identity.pdf          # Full vector identity guidelines document
+        ├── lifestyle-essentials-ecommerce.jpg   # Modern lifestyle everyday essentials catalog
+        ├── levendos-hiring-red.jpg              # Levendos Gifts in-house talent recruitment (Red)
+        └── levendos-hiring-cyan.jpg             # Levendos Gifts 3D tech recruitment call (Cyan)
 ```
 
 ---
@@ -44,28 +76,16 @@ Grounded in **classical color theory** for maximum conversion tension and visual
 | `--rose` | `#FB7185` | Secondary Warm Accent (Deltas, Status) | **7.2:1 (AAA)** |
 | `--rule` | `rgba(245,241,232,0.08)` | Hairline Separators & Crop Marks | — |
 
-### Enforced 60 / 30 / 10 Usage Law
-- **Ground + Text = 92%** of every viewport.
-- **Amber = ≤ 6%** (Primary CTAs, H1 brand growth highlight, key metric numerals).
-- **Rose = ≤ 2%** (Data deltas `+2.4x`, `−38%`, `CURRENT` status dot, active location pill).
-- **Contrast Law**: Any Amber surface strictly carries `--ink-inverse` (`#0C111C`).
-
 ---
 
-## ⚡ Engineered Techniques
+## ⚡ Key Engineered Features
 
-1. **SVG `feTurbulence` Grain Overlay**: Full-viewport fixed noise filter (`baseFrequency="0.9"`, `opacity: 0.035`, `mix-blend-mode: overlay`, `pointer-events: none !important`).
-2. **CSS Counters with `::before`**: Automated chapter numbering (`01 / 06` to `06 / 06`) driven natively by CSS counter rules.
-3. **`animation-timeline: view()`**: CSS view scroll timelines for card entrances with progressive `@supports` immediate fallback.
-4. **`:has()` Sibling Dimming**: Focusing or expanding any card subtly dims sibling cards (`opacity: 0.55; filter: saturate(0.7)`) with an undim on hover.
-5. **`clip-path: circle()` Reveal**: Education qualification cards reveal institutional details via circular transition with touch tap support.
-6. **Dynamic View Transitions API**: Card expansions/collapses use `document.startViewTransition()` with dynamically allocated `view-transition-name` identifiers that clean up automatically after 320ms.
-7. **Container Queries**: `@container (max-width: 440px)` enables cards to self-adapt their internal layouts to card width rather than viewport width.
-8. **Balanced Typographic Discipline**: `text-wrap: balance` on headings (`h1–h3`) and `text-wrap: pretty` on short card titles.
-9. **`@starting-style` Transitions**: Mobile menu takeover and Back-to-Top pill enter smoothly from `display: none` using `transition-behavior: allow-discrete`.
-10. **Zero-Shift Interactions**: Jitter-free layout architecture where hovering never triggers text reflow or vertical height displacement.
-11. **Single-Space Floating Labels**: Form fields use `placeholder=" "` to power bug-free CSS floating labels via `:has(:not(:placeholder-shown))` and `:has(:focus)`.
-12. **Recruiter-Friendly Print Stylesheet**: Includes `@media print` rules that hide interactive widgets and format all experience bullets into a pristine white multi-page CV layout when pressing `Ctrl+P`.
+1. **27 Verified Campaign & Creative Proofs**: Meta Ads Manager dashboards, high-ticket wedding funnels, study-abroad pipelines, and viral agency creatives.
+2. **Interactive Proof Inspector & Lightbox**: Full-resolution image preview with Prev/Next navigation, arrow-key controls, key metrics, channel information, and detailed strategic breakdowns.
+3. **Responsive Proof Filters**: Instant zero-reload filtering across `All Proof (27)`, `Meta Ads & Funnels (8)`, `Wedding & High-Ticket (4)`, `Creative & Viral (9)`, and `Branding & Launches (6)`.
+4. **Authentic Profile Representation**: High-resolution candidate portrait photo (`assets/profile.jpg`) integrated with graceful SVG fallback.
+5. **Zero-Jitter Interaction Architecture**: Click-only card accordions, no hover-triggered layout shifts, smooth transitions.
+6. **Consumer Psychology Integration**: Highlights Gokul's unique educational foundation — B.Sc in Psychology (consumer heuristics & loss aversion) + CCNA Network Infrastructure (latency & crawlability) + Full-Funnel Digital Marketing.
 
 ---
 
@@ -73,21 +93,14 @@ Grounded in **classical color theory** for maximum conversion tension and visual
 
 Because the entire website is self-contained with no npm or build scripts, you can deploy it in under 60 seconds:
 
-### Option 1: GitHub Pages (Free)
-1. Push this directory to a GitHub repository named `gokul-portfolio`.
-2. Go to **Settings** → **Pages**.
-3. Under **Branch**, select `main` and root `/`, then click **Save**.
-4. Your site will be live at `https://<your-username>.github.io/gokul-portfolio/`.
-
-### Option 2: Vercel / Netlify
-- Drag and drop the `gokul-dm` folder directly into the [Vercel](https://vercel.com) or [Netlify](https://netlify.com) dashboard.
-- Zero configuration required. It will deploy instantly.
-
-### Custom Domain Setup (`gokultvibin.com`)
-1. In your domain registrar (Namecheap, GoDaddy, Cloudflare), set up:
-   - `CNAME` for `www` → `<your-username>.github.io`
-   - `A` records for `@` pointing to GitHub Pages / Vercel IPs.
-2. Update the canonical URL in `index.html` if you change domain.
+### Push to GitHub / Vercel
+```powershell
+cd f:\CODE\portfolio\gokul-dm
+git add .
+git commit -m "feat: complete proof vault with 27 verified client campaigns and profile portrait"
+git push origin main
+```
+Vercel will detect the push and automatically deploy the updated portfolio live!
 
 ---
 
@@ -99,5 +112,4 @@ Because the entire website is self-contained with no npm or build scripts, you c
 - **Email**: `gokultvibin.work@gmail.com`
 - **Phone / WhatsApp**: `+91 9048646762`
 - **LinkedIn**: `https://www.linkedin.com/in/gokultvibin`
-- **Core Competencies**: Meta Ads, Google Ads, Technical SEO, Conversion Rate Optimization, Consumer Psychology, Content Strategy.
-
+- **Core Competencies**: Meta Ads (CBO/ABO, CAPI, WhatsApp Funnels), High-Ticket Wedding & Event Marketing, Google Ads, Technical SEO, Consumer Psychology, Vernacular Copywriting.
