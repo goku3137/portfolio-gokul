@@ -388,6 +388,19 @@
       color: #0C111C;
       border-color: #F59E0B;
       font-weight: 700;
+      box-shadow: 0 4px 14px -2px rgba(245, 158, 11, 0.35);
+    }
+
+    /* Gallery Card Elevation & Micro-Interactions */
+    .gallery-card {
+      transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), border-color 260ms ease, box-shadow 260ms ease;
+    }
+    .gallery-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.5), 0 0 20px -4px rgba(245, 158, 11, 0.14);
+    }
+    .gallery-card:focus-within {
+      border-color: #F59E0B;
     }
 
     /* Gallery Card Image Zoom Preview */
@@ -603,12 +616,15 @@
 
             <!-- CTA Row -->
             <div class="flex flex-wrap items-center gap-5 mt-8">
-              <a href="#work" class="conic-cta conic-btn inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.14em] hover:bg-amber-hi transition-all">
-                <span>Explore 27 Verified Proofs &rarr;</span>
+              <a href="#work" class="conic-cta conic-btn inline-flex items-center gap-2 px-6 py-3.5 rounded-lg bg-amber text-ink-inverse font-mono font-bold text-xs uppercase tracking-[0.14em] hover:bg-amber-hi transition-all shadow-lg shadow-amber/20">
+                <span>Explore 33 Verified Proofs &rarr;</span>
               </a>
 
-              <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.14em] text-ink hover:text-amber underline decoration-rule hover:decoration-amber underline-offset-4 transition-colors py-2">
-                <span>Resume (PDF) &darr;</span>
+              <a href="assets/Gokul-TVibin-Resume.pdf" download="Gokul-TVibin-Resume.pdf" class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.14em] text-ink hover:text-amber underline decoration-rule hover:decoration-amber underline-offset-4 transition-colors py-2 group">
+                <svg class="w-3.5 h-3.5 stroke-current text-amber group-hover:translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+                </svg>
+                <span>Download Executive CV (PDF)</span>
               </a>
             </div>
           </div>
@@ -853,7 +869,169 @@
         </div>
 
         <!-- ------------------------------------------------------------- -->
-        <!-- SUB-SECTION 3A: EMPLOYMENT TRAJECTORY (Accordion)             -->
+        <!-- SUB-SECTION 3A: PERFORMANCE BENCHMARKS & FUNNEL ARCHITECTURE  -->
+        <!-- ------------------------------------------------------------- -->
+        <div class="mb-16">
+          <div class="flex items-center justify-between mb-6">
+            <span class="font-mono text-xs text-amber uppercase tracking-[0.16em] font-bold">
+              // Performance Benchmarks &amp; Funnel Architecture
+            </span>
+            <span class="font-mono text-[11px] text-ink-dim">Real client campaign efficiencies</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Left Card: Comparative CPL & Efficiency Matrix (Visual Bar Chart) -->
+            <div class="lg:col-span-7 p-6 sm:p-7 rounded-2xl border border-rule bg-bg-surface flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4 pb-3 border-b border-rule">
+                  <div>
+                    <h3 class="font-display font-medium text-lg text-ink">Acquisition Cost vs. Industry Benchmarks</h3>
+                    <p class="text-xs text-ink-dim mt-0.5">Verified cost-per-lead (CPL) compression achieved across client accounts</p>
+                  </div>
+                  <span class="px-2.5 py-1 rounded bg-bg-elevated border border-amber/40 font-mono text-[10px] text-amber font-bold shrink-0">
+                    Up to -93% CPL
+                  </span>
+                </div>
+
+                <!-- 4 Comparative Metrics with Visual Animated Bars -->
+                <div class="space-y-4 font-mono text-xs pt-1">
+                  
+                  <!-- Metric 1: Overseas MBBS Admissions Lead -->
+                  <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                      <span class="text-ink font-sans font-medium text-xs sm:text-sm">Overseas MBBS Admissions (Study Abroad)</span>
+                      <span class="text-amber font-bold">₹39.52 <span class="text-[10px] text-ink-dim font-normal">vs ₹350 avg</span></span>
+                    </div>
+                    <div class="w-full h-3 bg-bg-base rounded-full overflow-hidden flex border border-rule">
+                      <div class="h-full bg-gradient-to-r from-amber-lo to-amber rounded-full" style="width: 11.3%;" title="Gokul: ₹39.52 CPL (-88.7%)"></div>
+                      <div class="h-full bg-rule/30 rounded-r-full" style="width: 88.7%;" title="Industry Benchmark: ₹350 CPL"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-ink-dim mt-1">
+                      <span class="text-rose font-bold">-88.7% CPL Reduction (Arca Noe)</span>
+                      <span>Industry CPL: ₹350.00</span>
+                    </div>
+                  </div>
+
+                  <!-- Metric 2: E-Commerce WhatsApp Purchase Funnel -->
+                  <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                      <span class="text-ink font-sans font-medium text-xs sm:text-sm">E-Commerce WhatsApp Conversion Inbound</span>
+                      <span class="text-rose font-bold">₹3.24 <span class="text-[10px] text-ink-dim font-normal">vs ₹28.50 avg</span></span>
+                    </div>
+                    <div class="w-full h-3 bg-bg-base rounded-full overflow-hidden flex border border-rule">
+                      <div class="h-full bg-gradient-to-r from-rose to-amber rounded-full" style="width: 11.4%;" title="Gokul: ₹3.24 CPL (-88.6%)"></div>
+                      <div class="h-full bg-rule/30 rounded-r-full" style="width: 88.6%;" title="Industry Benchmark: ₹28.50 CPL"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-ink-dim mt-1">
+                      <span class="text-rose font-bold">-88.6% CPL Reduction (Levendos)</span>
+                      <span>Industry CPL: ₹28.50</span>
+                    </div>
+                  </div>
+
+                  <!-- Metric 3: Regional Reach & Awareness CPM -->
+                  <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                      <span class="text-ink font-sans font-medium text-xs sm:text-sm">Cost Per 1,000 Impressions (CPM)</span>
+                      <span class="text-amber font-bold">₹2.22 <span class="text-[10px] text-ink-dim font-normal">vs ₹45.00 avg</span></span>
+                    </div>
+                    <div class="w-full h-3 bg-bg-base rounded-full overflow-hidden flex border border-rule">
+                      <div class="h-full bg-gradient-to-r from-amber to-amber-hi rounded-full" style="width: 4.9%;" title="Gokul: ₹2.22 CPM (-95.1%)"></div>
+                      <div class="h-full bg-rule/30 rounded-r-full" style="width: 95.1%;" title="Industry Benchmark: ₹45.00 CPM"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-ink-dim mt-1">
+                      <span class="text-rose font-bold">-95.1% CPM Compression (Ashmac &amp; Glorenza)</span>
+                      <span>Industry CPM: ₹45.00</span>
+                    </div>
+                  </div>
+
+                  <!-- Metric 4: Viral Social Engagement CPE -->
+                  <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                      <span class="text-ink font-sans font-medium text-xs sm:text-sm">Viral Video &amp; Reels Engagement (CPE)</span>
+                      <span class="text-rose font-bold">₹0.01 <span class="text-[10px] text-ink-dim font-normal">vs ₹1.50 avg</span></span>
+                    </div>
+                    <div class="w-full h-3 bg-bg-base rounded-full overflow-hidden flex border border-rule">
+                      <div class="h-full bg-rose rounded-full" style="width: 2%;" title="Gokul: ₹0.01 CPE (-99.3%)"></div>
+                      <div class="h-full bg-rule/30 rounded-r-full" style="width: 98%;" title="Industry Benchmark: ₹1.50 CPE"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-ink-dim mt-1">
+                      <span class="text-rose font-bold">-99.3% Engagement Cost (39K+ Actions)</span>
+                      <span>Industry CPE: ₹1.50</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="mt-6 pt-3 border-t border-rule flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono text-ink-dim">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber inline-block"></span> Gokul's Campaign Result
+                </span>
+                <span class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-ink-dim/40 inline-block"></span> Standard Industry Benchmark
+                </span>
+              </div>
+            </div>
+
+            <!-- Right Card: 4-Stage High-Conversion WhatsApp Architecture -->
+            <div class="lg:col-span-5 p-6 sm:p-7 rounded-2xl border border-rule bg-bg-surface flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4 pb-3 border-b border-rule">
+                  <div>
+                    <h3 class="font-display font-medium text-lg text-ink">Signature Funnel Flow</h3>
+                    <p class="text-xs text-ink-dim mt-0.5">Frictionless Click-to-WhatsApp conversion loop</p>
+                  </div>
+                  <span class="font-mono text-[10px] text-rose font-bold uppercase tracking-wider">
+                    Zero Form Drop-Off
+                  </span>
+                </div>
+
+                <!-- 4 Step Pipeline Flow -->
+                <div class="relative space-y-3.5 pl-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-px before:bg-amber/30">
+                  
+                  <!-- Step 1 -->
+                  <div class="relative">
+                    <span class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-amber flex items-center justify-center text-[8px] font-bold text-ink-inverse">1</span>
+                    <h4 class="font-mono text-xs font-bold text-ink uppercase tracking-wide">Vernacular Creative Hook</h4>
+                    <p class="text-xs text-ink-dim leading-snug mt-0.5">Short-form Reels &amp; cultural Malayalam memes that bypass audience ad fatigue (640K+ Reach).</p>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="relative">
+                    <span class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-bg-elevated border border-amber flex items-center justify-center text-[8px] font-bold text-amber">2</span>
+                    <h4 class="font-mono text-xs font-bold text-ink uppercase tracking-wide">Psychology Framing</h4>
+                    <p class="text-xs text-ink-dim leading-snug mt-0.5">Loss aversion, parental safety triggers, and scarcity framing (e.g., Free Helicam for 15 weddings).</p>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="relative">
+                    <span class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-amber flex items-center justify-center text-[8px] font-bold text-ink-inverse">3</span>
+                    <h4 class="font-mono text-xs font-bold text-ink uppercase tracking-wide">Direct WhatsApp Inbound</h4>
+                    <p class="text-xs text-ink-dim leading-snug mt-0.5">Pre-filled query strings link user directly to WhatsApp chat, cutting drop-offs by 60% vs web forms.</p>
+                  </div>
+
+                  <!-- Step 4 -->
+                  <div class="relative">
+                    <span class="absolute -left-[23px] top-1 w-3.5 h-3.5 rounded-full bg-rose flex items-center justify-center text-[8px] font-bold text-ink-inverse">4</span>
+                    <h4 class="font-mono text-xs font-bold text-ink uppercase tracking-wide">Conversational Conversion</h4>
+                    <p class="text-xs text-ink-dim leading-snug mt-0.5">High-touch sales consultation delivers verified transactions at ₹3.24 CPL &amp; ₹1 Lakh packages.</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="mt-6 pt-3 border-t border-rule flex items-center justify-between text-[11px] font-mono text-ink-dim">
+                <span class="text-amber font-bold">15,000+ Total Inbound Leads</span>
+                <span class="text-rose font-bold">Proven across 5+ Verticals</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ------------------------------------------------------------- -->
+        <!-- SUB-SECTION 3B: EMPLOYMENT TRAJECTORY (Accordion)             -->
         <!-- ------------------------------------------------------------- -->
         <div class="mb-16">
           <div class="flex items-center justify-between mb-6">
@@ -893,11 +1071,12 @@
                     <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
                       <p class="font-mono text-xs text-ink">Kodungallur &middot; Kochi, Kerala</p>
                       <ul class="space-y-1.5 list-disc list-inside">
-                        <li>Directed high-performance Meta Ads campaigns across retail, e-commerce, and high-ticket wedding sectors (including Levendos, Dua Weddings, Glorenza, Ashmac, and Laark Fitness).</li>
+                        <li>Managed social media accounts across multi-channel platforms, developing cohesive content strategies and monthly content calendars.</li>
+                        <li>Planned, executed, and optimized Meta Ads campaigns to generate leads, improve audience engagement, and scale brand awareness across retail, e-commerce, and high-ticket weddings (Levendos, Dua Weddings, Glorenza, Ashmac, Laark Fitness).</li>
                         <li>Pioneered WhatsApp click-to-chat conversion funnels generating over 15,000 verified leads at an industry-leading cost of &#8377;3.24 &ndash; &#8377;4.97 per conversation.</li>
-                        <li>Crafted viral agency creative concepts including the viral "Diet Cancel" leads meme, "Happy Vishu" digital Krishna concept, and minimalist "Eid Mubarak" stylus-minaret campaign.</li>
-                        <li>Generated high-ticket wedding inquiries for Dua Weddings (&#8377;74,000 &ndash; &#8377;1,00,000 photography packages) with cinematic reel ads.</li>
-                        <li>Structured technical SEO roadmaps: semantic keyword mapping, canonical governance, meta schemas, and site latency improvements.</li>
+                        <li>Conducted comprehensive SEO activities, including keyword research, on-page optimization, and website content optimization to improve organic search visibility.</li>
+                        <li>Developed foundational knowledge and execution of Google Ads, including campaign structures, keyword targeting, bidding strategies, and performance analysis.</li>
+                        <li>Designed marketing creatives and coordinated content production (viral "Diet Cancel" meme, "Happy Vishu" Lord Krishna concept, and "Influencer of Peace" Gandhi tribute).</li>
                       </ul>
                     </div>
                   </div>
@@ -929,10 +1108,11 @@
                     <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
                       <p class="font-mono text-xs text-ink">Kochi, Kerala</p>
                       <ul class="space-y-1.5 list-disc list-inside">
-                        <li>Orchestrated full-funnel student recruitment campaigns across international study destinations (Georgia Nursing, European MBBS, and UK universities).</li>
-                        <li>Executed high-trust parent-and-student WhatsApp lead funnels for MBBS aspirants, achieving qualified student admissions inquiries at &#8377;39.52 per lead.</li>
-                        <li>Engineered cultural and vernacular creative campaigns (such as the viral Mohanlal UK travel meme and Plus Two results hooks), reducing creative fatigue and boosting social reach.</li>
-                        <li>Boosted high-performing counseling reels generating over 12,800+ post engagements at &#8377;0.04 per engagement.</li>
+                        <li>Managed study abroad marketing campaigns focused on high-intent international student and parent lead generation.</li>
+                        <li>Created content and social media strategies targeting overseas education aspirants across European MBBS, Georgia Nursing, and UK university pathways.</li>
+                        <li>Generated qualified student admissions inquiries through Facebook and Instagram marketing campaigns at a record &#8377;39.52 CPL.</li>
+                        <li>Assisted in branding and promotional activities for overseas education services, crafting culturally resonant creative campaigns (Mohanlal UK travel meme, Plus Two results hook, Sunita Williams poster).</li>
+                        <li>Coordinated with the content and counseling teams for campaign planning, boosting counseling reels to 12,800+ engagements at &#8377;0.04 CPE.</li>
                       </ul>
                     </div>
                   </div>
@@ -964,9 +1144,9 @@
                     <div class="pt-4 mt-4 border-t border-rule space-y-2 text-xs sm:text-sm text-ink-dim font-sans">
                       <p class="font-mono text-xs text-ink">Thrissur, Kerala</p>
                       <ul class="space-y-1.5 list-disc list-inside">
-                        <li>Assisted senior strategists on client multi-channel campaigns, demographic targeting models, and search keyword taxonomy.</li>
-                        <li>Collaborated on graphic design deliverables and B2B corporate branding (including the Quadrill Demolition identity guidelines).</li>
-                        <li>Compiled weekly analytics reporting, tracking CTR, CPL, bounce rate, and landing page conversion bottlenecks.</li>
+                        <li>Worked on social media management, on-page SEO, and Google Ads search campaigns for commercial clients.</li>
+                        <li>Assisted in creating engaging visual and written content for regional business clients and corporate branding deliverables (including the Quadrill Demolition vector identity).</li>
+                        <li>Learned and implemented advanced campaign optimization, audience targeting models, demographic segmentation, and conversion bottleneck analysis.</li>
                       </ul>
                     </div>
                   </div>
@@ -978,7 +1158,7 @@
         </div>
 
         <!-- ------------------------------------------------------------- -->
-        <!-- SUB-SECTION 3B: MASTER CAMPAIGN PROOF & CREATIVE GALLERY      -->
+        <!-- SUB-SECTION 3C: MASTER CAMPAIGN PROOF & CREATIVE GALLERY      -->
         <!-- ------------------------------------------------------------- -->
         <div>
           
@@ -1971,63 +2151,69 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
           
           <!-- Card 1: ADDM -->
-          <div class="edu-card relative min-h-[140px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer" tabindex="0">
+          <div class="edu-card relative min-h-[150px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer transition-all hover:border-amber/50" tabindex="0">
             <div>
-              <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2024</span>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest">2024 &bull; ADDM</span>
+                <span class="font-mono text-[9px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">Dotin Academy</span>
+              </div>
               <h3 class="card-title font-display font-medium text-lg text-ink leading-tight mb-2">
                 Advanced Diploma in Digital Marketing (ADDM)
               </h3>
-              <p class="font-mono text-[11px] text-ink-dim">Hover / focus for details &rarr;</p>
+              <p class="font-mono text-xs text-ink-dim">Dotin Digital Academy &middot; Thrissur, Kerala</p>
             </div>
             <div class="edu-reveal-layer absolute inset-0 bg-bg-elevated p-6 flex flex-col justify-between border border-amber/60 z-10 pointer-events-none">
               <div>
-                <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2024 &bull; ADDM</span>
+                <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2024 &bull; ADDM Curriculum</span>
                 <h4 class="font-display font-medium text-sm text-ink mb-2">Dotin Digital Academy, Thrissur</h4>
                 <p class="text-xs text-ink-dim leading-relaxed">
-                  Specialized in full-funnel Meta Ads, Google Ads architecture, and technical on-page SEO diagnostics.
+                  Deep specialization across full-funnel Meta Ads, Google Ads search &amp; display, technical SEO on-page audits, and CRO.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Card 2: CCNA -->
-          <div class="edu-card relative min-h-[140px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer" tabindex="0">
+          <div class="edu-card relative min-h-[150px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer transition-all hover:border-rose/50" tabindex="0">
             <div>
-              <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest block mb-1">2023</span>
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest">2023 &bull; CCNA</span>
+                <span class="font-mono text-[9px] text-ink-dim uppercase px-2 py-0.5 rounded bg-bg-elevated border border-rule">Skill Haara</span>
+              </div>
               <h3 class="card-title font-display font-medium text-lg text-ink leading-tight mb-2">
                 Diploma in Network Engineering (CCNA)
               </h3>
-              <p class="font-mono text-[11px] text-ink-dim">Hover / focus for details &rarr;</p>
+              <p class="font-mono text-xs text-ink-dim">Skill Haara &middot; Thrissur, Kerala</p>
             </div>
             <div class="edu-reveal-layer absolute inset-0 bg-bg-elevated p-6 flex flex-col justify-between border border-rose/60 z-10 pointer-events-none">
               <div>
-                <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest block mb-1">2023 &bull; CCNA</span>
+                <span class="font-mono text-xs text-rose font-bold uppercase tracking-widest block mb-1">2023 &bull; CCNA Infrastructure</span>
                 <h4 class="font-display font-medium text-sm text-ink mb-2">Skill Haara, Thrissur</h4>
                 <p class="text-xs text-ink-dim leading-relaxed">
-                  Server protocols, DNS architectures, latency diagnostics, and technical search engine crawlability.
+                  Network topologies, DNS routing, server latency diagnostics, and Conversions API (CAPI) server-side integration.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Card 3: Psychology -->
-          <div class="edu-card relative min-h-[140px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer" tabindex="0">
+          <div class="edu-card relative min-h-[150px] rounded-xl border border-rule bg-bg-surface p-6 overflow-hidden group cursor-pointer transition-all hover:border-amber/50" tabindex="0">
             <div>
               <div class="flex items-center justify-between mb-1">
-                <span class="font-mono text-xs text-ink font-bold uppercase tracking-widest">2019&ndash;2022</span>
-                <span class="font-mono text-[9px] text-amber uppercase px-1.5 py-0.5 rounded bg-bg-elevated border border-rule">consumer behaviour</span>
+                <span class="font-mono text-xs text-ink font-bold uppercase tracking-widest">2019&ndash;2022 &bull; Degree</span>
+                <span class="font-mono text-[9px] text-amber uppercase px-1.5 py-0.5 rounded bg-bg-elevated border border-rule">MES Asmabi</span>
               </div>
               <h3 class="card-title font-display font-medium text-lg text-ink leading-tight mb-2">
                 Bachelor's Degree in Psychology
               </h3>
-              <p class="font-mono text-[11px] text-ink-dim">Hover / focus for details &rarr;</p>
+              <p class="font-mono text-xs text-ink-dim">MES Asmabi College &middot; Kodungallur, Kerala</p>
             </div>
             <div class="edu-reveal-layer absolute inset-0 bg-bg-elevated p-6 flex flex-col justify-between border border-amber/60 z-10 pointer-events-none">
               <div>
                 <span class="font-mono text-xs text-amber font-bold uppercase tracking-widest block mb-1">2019&ndash;2022 &bull; B.Sc Psychology</span>
                 <h4 class="font-display font-medium text-sm text-ink mb-2">MES Asmabi College, Kodungallur</h4>
                 <p class="text-xs text-ink-dim leading-relaxed">
-                  Study of cognitive heuristics, perception, and human decision systems applied directly to conversion rate optimization.
+                  Systematic study of cognitive heuristics, perceptual biases, social proof, and decision architecture applied to advertising.
                 </p>
               </div>
             </div>
@@ -2276,10 +2462,11 @@
         <p class="text-[11px] text-ink-dim/80 mt-1">&copy; <span id="year">2026</span> All rights reserved. Editorial Edition.</p>
       </div>
 
-      <div class="flex gap-4 text-[11px] md:justify-center">
+      <div class="flex flex-wrap gap-4 text-[11px] md:justify-center">
         <a href="#about" class="hover:text-amber transition-colors">02 About</a>
         <a href="#work" class="hover:text-amber transition-colors">03 Work</a>
         <a href="#skills" class="hover:text-amber transition-colors">04 Skills</a>
+        <a href="#education" class="hover:text-amber transition-colors">05 Credentials</a>
         <a href="#contact" class="hover:text-amber transition-colors">06 Contact</a>
       </div>
 
